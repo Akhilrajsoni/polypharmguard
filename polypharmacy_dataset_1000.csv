@@ -1,0 +1,1001 @@
+Case_ID,Drugs,Total_Drugs,DDI_Pairs_Count,Major_Interactions,Moderate_Interactions,Minor_Interactions,Risk_Level
+1,Erythromycin,1,0,0,0,0,LOW
+2,Clopidogrel,1,0,0,0,0,LOW
+3,Furosemide,1,0,0,0,0,LOW
+4,Metformin,1,0,0,0,0,LOW
+5,"Dexamethasone, Ciprofloxacin",2,1,0,0,1,LOW
+6,Levothyroxine,1,0,0,0,0,LOW
+7,Zolpidem,1,0,0,0,0,LOW
+8,"Calcium, Prednisone",2,1,0,0,1,LOW
+9,"Clarithromycin, Zolpidem",2,1,0,0,1,LOW
+10,Fluoxetine,1,0,0,0,0,LOW
+11,"Diltiazem, Levothyroxine",2,1,0,0,1,LOW
+12,Insulin,1,0,0,0,0,LOW
+13,Tramadol,1,0,0,0,0,LOW
+14,"Lisinopril, Glimepiride",2,1,0,0,1,LOW
+15,"Amitriptyline, Zolpidem",2,1,0,0,1,LOW
+16,"Magnesium, Paracetamol",2,1,1,0,0,LOW
+17,Vitamin D,1,0,0,0,0,LOW
+18,Metformin,1,0,0,0,0,LOW
+19,Dexamethasone,1,0,0,0,0,LOW
+20,Prednisone,1,0,0,0,0,LOW
+21,Alprazolam,1,0,0,0,0,LOW
+22,"Lisinopril, Dexamethasone",2,1,0,0,1,LOW
+23,"Diltiazem, Ranitidine",2,1,0,0,1,LOW
+24,Alprazolam,1,0,0,0,0,LOW
+25,"Sertraline, Hydrochlorothiazide",2,1,0,0,1,LOW
+26,Amlodipine,1,0,0,0,0,LOW
+27,"Ranitidine, Ciprofloxacin",2,1,1,0,0,LOW
+28,Amlodipine,1,0,0,0,0,LOW
+29,"Prednisone, Paracetamol",2,1,0,0,1,LOW
+30,Clarithromycin,1,0,0,0,0,LOW
+31,"Omeprazole, Ramipril",2,1,0,0,1,LOW
+32,"Aspirin, Simvastatin",2,1,0,0,1,LOW
+33,Insulin,1,0,0,0,0,LOW
+34,"Amlodipine, Warfarin",2,1,1,0,0,LOW
+35,"Ibuprofen, Magnesium",2,1,0,0,1,LOW
+36,Omeprazole,1,0,0,0,0,LOW
+37,Alprazolam,1,0,0,0,0,LOW
+38,Ramipril,1,0,0,0,0,LOW
+39,Tramadol,1,0,0,0,0,LOW
+40,Sertraline,1,0,0,0,0,LOW
+41,"Alprazolam, Lisinopril",2,1,1,0,0,LOW
+42,"Vitamin D, Clopidogrel",2,1,1,0,0,LOW
+43,Vitamin D,1,0,0,0,0,LOW
+44,"Ciprofloxacin, Clopidogrel",2,1,0,1,0,LOW
+45,"Warfarin, Erythromycin",2,1,0,0,1,LOW
+46,Ibuprofen,1,0,0,0,0,LOW
+47,"Atenolol, Magnesium",2,1,0,0,1,LOW
+48,Levothyroxine,1,0,0,0,0,LOW
+49,Atenolol,1,0,0,0,0,LOW
+50,"Simvastatin, Thyroxine",2,1,0,0,1,LOW
+51,Alprazolam,1,0,0,0,0,LOW
+52,"Dexamethasone, Verapamil",2,1,0,0,1,LOW
+53,Ibuprofen,1,0,0,0,0,LOW
+54,"Simvastatin, Aspirin",2,1,0,0,1,LOW
+55,"Lisinopril, Magnesium",2,1,0,0,1,LOW
+56,"Levothyroxine, Hydrochlorothiazide",2,1,0,0,1,LOW
+57,Calcium,1,0,0,0,0,LOW
+58,"Alprazolam, Prednisone",2,1,0,0,1,LOW
+59,Metformin,1,0,0,0,0,LOW
+60,"Alprazolam, Tramadol",2,1,0,0,1,LOW
+61,"Ciprofloxacin, Metformin",2,1,0,1,0,LOW
+62,Fluoxetine,1,0,0,0,0,LOW
+63,"Omeprazole, Glimepiride",2,1,0,0,1,LOW
+64,"Ibuprofen, Simvastatin",2,1,0,0,1,LOW
+65,"Levothyroxine, Simvastatin",2,1,0,0,1,LOW
+66,Atorvastatin,1,0,0,0,0,LOW
+67,"Ranitidine, Atenolol",2,1,0,0,1,LOW
+68,Prednisone,1,0,0,0,0,LOW
+69,Erythromycin,1,0,0,0,0,LOW
+70,"Fluoxetine, Simvastatin",2,1,0,0,1,LOW
+71,Paracetamol,1,0,0,0,0,LOW
+72,"Sertraline, Amitriptyline",2,1,1,0,0,LOW
+73,Sertraline,1,0,0,0,0,LOW
+74,"Metoprolol, Tramadol",2,1,0,0,1,LOW
+75,Ciprofloxacin,1,0,0,0,0,LOW
+76,"Thyroxine, Dexamethasone",2,1,0,0,1,LOW
+77,Metoprolol,1,0,0,0,0,LOW
+78,"Amlodipine, Vitamin D",2,1,1,0,0,LOW
+79,Zolpidem,1,0,0,0,0,LOW
+80,"Magnesium, Fluoxetine",2,1,0,0,1,LOW
+81,"Glimepiride, Paracetamol",2,1,0,1,0,LOW
+82,"Lisinopril, Omeprazole",2,1,0,0,1,LOW
+83,"Diltiazem, Calcium",2,1,0,1,0,LOW
+84,Atenolol,1,0,0,0,0,LOW
+85,Insulin,1,0,0,0,0,LOW
+86,Omeprazole,1,0,0,0,0,LOW
+87,"Simvastatin, Alprazolam",2,1,0,0,1,LOW
+88,"Paracetamol, Ramipril",2,1,0,0,1,LOW
+89,Amlodipine,1,0,0,0,0,LOW
+90,"Prednisone, Ciprofloxacin",2,1,0,0,1,LOW
+91,"Aspirin, Vitamin D",2,1,1,0,0,LOW
+92,"Glimepiride, Amitriptyline",2,1,0,0,1,LOW
+93,"Propranolol, Magnesium",2,1,0,0,1,LOW
+94,Levothyroxine,1,0,0,0,0,LOW
+95,Fluoxetine,1,0,0,0,0,LOW
+96,"Omeprazole, Fluoxetine",2,1,0,0,1,LOW
+97,"Vitamin D, Propranolol",2,1,0,1,0,LOW
+98,Fluoxetine,1,0,0,0,0,LOW
+99,Aspirin,1,0,0,0,0,LOW
+100,"Propranolol, Furosemide",2,1,0,0,1,LOW
+101,Ranitidine,1,0,0,0,0,LOW
+102,Verapamil,1,0,0,0,0,LOW
+103,Atorvastatin,1,0,0,0,0,LOW
+104,"Prednisone, Aspirin",2,1,1,0,0,LOW
+105,Calcium,1,0,0,0,0,LOW
+106,Insulin,1,0,0,0,0,LOW
+107,Dexamethasone,1,0,0,0,0,LOW
+108,"Furosemide, Hydrochlorothiazide",2,1,0,0,1,LOW
+109,Sertraline,1,0,0,0,0,LOW
+110,"Furosemide, Thyroxine",2,1,0,1,0,LOW
+111,"Atorvastatin, Clarithromycin",2,1,0,0,1,LOW
+112,"Ramipril, Diazepam",2,1,0,0,1,LOW
+113,Hydrochlorothiazide,1,0,0,0,0,LOW
+114,Sertraline,1,0,0,0,0,LOW
+115,"Warfarin, Erythromycin",2,1,0,1,0,LOW
+116,Vitamin D,1,0,0,0,0,LOW
+117,"Alprazolam, Clarithromycin",2,1,0,0,1,LOW
+118,"Tramadol, Ibuprofen",2,1,0,0,1,LOW
+119,"Magnesium, Atenolol",2,1,0,1,0,LOW
+120,"Tramadol, Calcium",2,1,1,0,0,LOW
+121,Zolpidem,1,0,0,0,0,LOW
+122,"Furosemide, Calcium",2,1,0,0,1,LOW
+123,"Furosemide, Chloroquine",2,1,0,0,1,LOW
+124,Vitamin D,1,0,0,0,0,LOW
+125,"Atorvastatin, Propranolol",2,1,0,0,1,LOW
+126,"Propranolol, Prednisone",2,1,0,0,1,LOW
+127,"Insulin, Atorvastatin",2,1,0,1,0,LOW
+128,Warfarin,1,0,0,0,0,LOW
+129,"Clopidogrel, Ranitidine",2,1,1,0,0,LOW
+130,Verapamil,1,0,0,0,0,LOW
+131,Diazepam,1,0,0,0,0,LOW
+132,"Chloroquine, Verapamil",2,1,0,0,1,LOW
+133,"Prednisone, Atenolol",2,1,1,0,0,LOW
+134,"Atenolol, Warfarin",2,1,1,0,0,LOW
+135,"Simvastatin, Ranitidine",2,1,0,0,1,LOW
+136,Insulin,1,0,0,0,0,LOW
+137,Clarithromycin,1,0,0,0,0,LOW
+138,"Tramadol, Dexamethasone",2,1,0,0,1,LOW
+139,Insulin,1,0,0,0,0,LOW
+140,Levothyroxine,1,0,0,0,0,LOW
+141,"Levothyroxine, Vitamin D",2,1,0,0,1,LOW
+142,"Verapamil, Chloroquine",2,1,0,0,1,LOW
+143,"Magnesium, Chloroquine",2,1,0,1,0,LOW
+144,"Fluoxetine, Aspirin",2,1,0,0,1,LOW
+145,"Diazepam, Atenolol",2,1,0,0,1,LOW
+146,"Dexamethasone, Glimepiride",2,1,0,0,1,LOW
+147,Ibuprofen,1,0,0,0,0,LOW
+148,"Verapamil, Thyroxine",2,1,0,0,1,LOW
+149,"Clopidogrel, Diltiazem",2,1,0,0,1,LOW
+150,"Calcium, Amlodipine",2,1,0,0,1,LOW
+151,"Hydrochlorothiazide, Metformin",2,1,0,0,1,LOW
+152,Metformin,1,0,0,0,0,LOW
+153,"Ibuprofen, Magnesium",2,1,0,1,0,LOW
+154,"Ciprofloxacin, Propranolol",2,1,0,0,1,LOW
+155,Glimepiride,1,0,0,0,0,LOW
+156,"Erythromycin, Diazepam",2,1,0,1,0,LOW
+157,Vitamin D,1,0,0,0,0,LOW
+158,Glimepiride,1,0,0,0,0,LOW
+159,"Levothyroxine, Aspirin",2,1,1,0,0,LOW
+160,Lisinopril,1,0,0,0,0,LOW
+161,Ibuprofen,1,0,0,0,0,LOW
+162,Insulin,1,0,0,0,0,LOW
+163,Clopidogrel,1,0,0,0,0,LOW
+164,"Erythromycin, Glimepiride",2,1,1,0,0,LOW
+165,Thyroxine,1,0,0,0,0,LOW
+166,Verapamil,1,0,0,0,0,LOW
+167,"Amitriptyline, Verapamil",2,1,0,0,1,LOW
+168,"Ramipril, Amlodipine",2,1,0,1,0,LOW
+169,Dexamethasone,1,0,0,0,0,LOW
+170,Atorvastatin,1,0,0,0,0,LOW
+171,Verapamil,1,0,0,0,0,LOW
+172,"Amlodipine, Aspirin",2,1,0,0,1,LOW
+173,Thyroxine,1,0,0,0,0,LOW
+174,Clopidogrel,1,0,0,0,0,LOW
+175,Clopidogrel,1,0,0,0,0,LOW
+176,Ibuprofen,1,0,0,0,0,LOW
+177,Hydrochlorothiazide,1,0,0,0,0,LOW
+178,"Lisinopril, Warfarin",2,1,0,0,1,LOW
+179,Chloroquine,1,0,0,0,0,LOW
+180,"Tramadol, Atorvastatin",2,1,0,0,1,LOW
+181,Calcium,1,0,0,0,0,LOW
+182,Hydrochlorothiazide,1,0,0,0,0,LOW
+183,Diazepam,1,0,0,0,0,LOW
+184,Chloroquine,1,0,0,0,0,LOW
+185,Glimepiride,1,0,0,0,0,LOW
+186,"Hydrochlorothiazide, Simvastatin",2,1,0,0,1,LOW
+187,"Warfarin, Paracetamol",2,1,0,1,0,LOW
+188,Furosemide,1,0,0,0,0,LOW
+189,"Ranitidine, Simvastatin",2,1,0,1,0,LOW
+190,Diazepam,1,0,0,0,0,LOW
+191,"Chloroquine, Fluoxetine",2,1,0,0,1,LOW
+192,Alprazolam,1,0,0,0,0,LOW
+193,"Diazepam, Magnesium",2,1,0,0,1,LOW
+194,"Furosemide, Atorvastatin",2,1,0,1,0,LOW
+195,"Insulin, Atenolol",2,1,0,1,0,LOW
+196,Amlodipine,1,0,0,0,0,LOW
+197,"Dexamethasone, Thyroxine",2,1,0,0,1,LOW
+198,Ramipril,1,0,0,0,0,LOW
+199,Ramipril,1,0,0,0,0,LOW
+200,"Magnesium, Prednisone",2,1,0,1,0,LOW
+201,"Sertraline, Thyroxine",2,1,0,0,1,LOW
+202,"Verapamil, Diltiazem",2,1,0,0,1,LOW
+203,Omeprazole,1,0,0,0,0,LOW
+204,"Verapamil, Zolpidem",2,1,0,1,0,LOW
+205,"Amitriptyline, Clarithromycin",2,1,0,0,1,LOW
+206,Insulin,1,0,0,0,0,LOW
+207,"Warfarin, Furosemide",2,1,1,0,0,LOW
+208,Clopidogrel,1,0,0,0,0,LOW
+209,Metformin,1,0,0,0,0,LOW
+210,"Ranitidine, Diazepam",2,1,0,0,1,LOW
+211,Warfarin,1,0,0,0,0,LOW
+212,Lisinopril,1,0,0,0,0,LOW
+213,"Zolpidem, Omeprazole",2,1,0,0,1,LOW
+214,Magnesium,1,0,0,0,0,LOW
+215,"Vitamin D, Atenolol",2,1,0,1,0,LOW
+216,"Paracetamol, Ibuprofen",2,1,0,0,1,LOW
+217,"Glimepiride, Diazepam",2,1,0,1,0,LOW
+218,"Diltiazem, Metoprolol",2,1,0,0,1,LOW
+219,"Insulin, Tramadol",2,1,0,0,1,LOW
+220,Vitamin D,1,0,0,0,0,LOW
+221,"Verapamil, Ibuprofen",2,1,0,0,1,LOW
+222,Warfarin,1,0,0,0,0,LOW
+223,"Vitamin D, Diltiazem",2,1,0,0,1,LOW
+224,"Simvastatin, Zolpidem",2,1,0,1,0,LOW
+225,"Diazepam, Omeprazole",2,1,0,0,1,LOW
+226,Metoprolol,1,0,0,0,0,LOW
+227,"Vitamin D, Amlodipine",2,1,0,0,1,LOW
+228,Aspirin,1,0,0,0,0,LOW
+229,"Zolpidem, Furosemide",2,1,0,1,0,LOW
+230,"Magnesium, Furosemide",2,1,0,0,1,LOW
+231,Alprazolam,1,0,0,0,0,LOW
+232,"Magnesium, Zolpidem",2,1,0,1,0,LOW
+233,"Ramipril, Warfarin",2,1,0,0,1,LOW
+234,"Furosemide, Thyroxine",2,1,0,0,1,LOW
+235,"Simvastatin, Clopidogrel",2,1,0,0,1,LOW
+236,"Amlodipine, Atorvastatin",2,1,1,0,0,LOW
+237,Zolpidem,1,0,0,0,0,LOW
+238,"Vitamin D, Ramipril",2,1,0,0,1,LOW
+239,"Amitriptyline, Aspirin",2,1,0,1,0,LOW
+240,"Levothyroxine, Calcium",2,1,0,0,1,LOW
+241,"Erythromycin, Vitamin D",2,1,0,0,1,LOW
+242,Chloroquine,1,0,0,0,0,LOW
+243,"Prednisone, Furosemide",2,1,0,0,1,LOW
+244,Ranitidine,1,0,0,0,0,LOW
+245,Ciprofloxacin,1,0,0,0,0,LOW
+246,"Diltiazem, Insulin",2,1,0,0,1,LOW
+247,Alprazolam,1,0,0,0,0,LOW
+248,Metformin,1,0,0,0,0,LOW
+249,Ranitidine,1,0,0,0,0,LOW
+250,"Lisinopril, Omeprazole",2,1,0,0,1,LOW
+251,Warfarin,1,0,0,0,0,LOW
+252,Hydrochlorothiazide,1,0,0,0,0,LOW
+253,Clarithromycin,1,0,0,0,0,LOW
+254,Zolpidem,1,0,0,0,0,LOW
+255,Diazepam,1,0,0,0,0,LOW
+256,"Metoprolol, Diazepam",2,1,0,0,1,LOW
+257,Metoprolol,1,0,0,0,0,LOW
+258,Calcium,1,0,0,0,0,LOW
+259,Metformin,1,0,0,0,0,LOW
+260,Ranitidine,1,0,0,0,0,LOW
+261,"Warfarin, Propranolol",2,1,0,0,1,LOW
+262,"Zolpidem, Omeprazole",2,1,0,0,1,LOW
+263,Ramipril,1,0,0,0,0,LOW
+264,Vitamin D,1,0,0,0,0,LOW
+265,Verapamil,1,0,0,0,0,LOW
+266,"Calcium, Propranolol",2,1,0,1,0,LOW
+267,"Simvastatin, Ramipril",2,1,0,0,1,LOW
+268,"Hydrochlorothiazide, Propranolol",2,1,0,0,1,LOW
+269,Glimepiride,1,0,0,0,0,LOW
+270,"Ramipril, Lisinopril",2,1,0,0,1,LOW
+271,"Sertraline, Metoprolol",2,1,0,0,1,LOW
+272,Furosemide,1,0,0,0,0,LOW
+273,"Chloroquine, Propranolol",2,1,0,0,1,LOW
+274,"Zolpidem, Simvastatin",2,1,0,0,1,LOW
+275,"Sertraline, Lisinopril",2,1,0,0,1,LOW
+276,Magnesium,1,0,0,0,0,LOW
+277,Clarithromycin,1,0,0,0,0,LOW
+278,Calcium,1,0,0,0,0,LOW
+279,Glimepiride,1,0,0,0,0,LOW
+280,Paracetamol,1,0,0,0,0,LOW
+281,"Clarithromycin, Diltiazem",2,1,0,0,1,LOW
+282,"Furosemide, Chloroquine",2,1,0,0,1,LOW
+283,"Omeprazole, Furosemide",2,1,1,0,0,LOW
+284,"Simvastatin, Dexamethasone",2,1,0,0,1,LOW
+285,"Furosemide, Paracetamol",2,1,1,0,0,LOW
+286,Furosemide,1,0,0,0,0,LOW
+287,"Atorvastatin, Clopidogrel",2,1,0,0,1,LOW
+288,Hydrochlorothiazide,1,0,0,0,0,LOW
+289,"Ramipril, Paracetamol",2,1,0,1,0,LOW
+290,Chloroquine,1,0,0,0,0,LOW
+291,"Lisinopril, Simvastatin",2,1,0,0,1,LOW
+292,"Amitriptyline, Furosemide",2,1,0,1,0,LOW
+293,"Furosemide, Chloroquine",2,1,0,0,1,LOW
+294,"Calcium, Magnesium",2,1,0,0,1,LOW
+295,Aspirin,1,0,0,0,0,LOW
+296,Verapamil,1,0,0,0,0,LOW
+297,"Thyroxine, Propranolol",2,1,0,0,1,LOW
+298,Calcium,1,0,0,0,0,LOW
+299,Paracetamol,1,0,0,0,0,LOW
+300,"Alprazolam, Calcium",2,1,0,0,1,LOW
+301,"Fluoxetine, Alprazolam",2,1,0,1,1,MODERATE
+302,"Ibuprofen, Atorvastatin, Aspirin, Levothyroxine",4,6,3,1,2,MODERATE
+303,"Ramipril, Erythromycin, Simvastatin",3,3,2,1,1,MODERATE
+304,"Warfarin, Clopidogrel, Prednisone",3,3,0,2,1,MODERATE
+305,"Clopidogrel, Vitamin D, Atorvastatin",3,3,1,1,1,MODERATE
+306,"Metoprolol, Insulin",2,1,0,1,1,MODERATE
+307,"Omeprazole, Erythromycin, Alprazolam",3,3,0,1,2,MODERATE
+308,"Chloroquine, Clarithromycin, Metoprolol, Calcium",4,6,1,2,3,MODERATE
+309,"Ciprofloxacin, Chloroquine, Dexamethasone, Amitriptyline",4,6,0,1,5,MODERATE
+310,"Hydrochlorothiazide, Clarithromycin, Tramadol",3,3,0,1,2,MODERATE
+311,"Ibuprofen, Clarithromycin, Metoprolol, Lisinopril",4,6,0,1,5,MODERATE
+312,"Dexamethasone, Insulin, Chloroquine",3,3,0,1,2,MODERATE
+313,"Aspirin, Amitriptyline, Ibuprofen",3,3,1,1,2,MODERATE
+314,"Thyroxine, Aspirin, Diazepam, Hydrochlorothiazide",4,6,0,1,5,MODERATE
+315,"Hydrochlorothiazide, Diazepam",2,1,0,1,1,MODERATE
+316,"Calcium, Verapamil",2,1,0,1,1,MODERATE
+317,"Chloroquine, Hydrochlorothiazide",2,1,0,1,0,MODERATE
+318,"Levothyroxine, Thyroxine, Warfarin, Metformin",4,6,2,1,3,MODERATE
+319,"Metoprolol, Sertraline, Insulin",3,3,0,1,3,MODERATE
+320,"Calcium, Ramipril, Diltiazem, Amlodipine",4,6,0,1,5,MODERATE
+321,"Diltiazem, Paracetamol",2,1,0,1,0,MODERATE
+322,"Lisinopril, Clarithromycin, Levothyroxine",3,3,1,1,2,MODERATE
+323,"Clopidogrel, Amitriptyline, Paracetamol, Magnesium",4,6,0,3,3,MODERATE
+324,"Prednisone, Calcium",2,1,0,1,0,MODERATE
+325,"Ranitidine, Propranolol",2,1,0,1,1,MODERATE
+326,"Ramipril, Diazepam",2,1,0,1,1,MODERATE
+327,"Dexamethasone, Furosemide",2,1,0,1,1,MODERATE
+328,"Erythromycin, Warfarin",2,1,0,1,1,MODERATE
+329,"Furosemide, Chloroquine, Lisinopril, Insulin",4,6,0,1,5,MODERATE
+330,"Tramadol, Diltiazem, Levothyroxine",3,3,0,1,3,MODERATE
+331,"Clarithromycin, Paracetamol",2,1,0,1,1,MODERATE
+332,"Zolpidem, Diltiazem, Metformin, Insulin",4,6,0,1,5,MODERATE
+333,"Omeprazole, Amlodipine, Ciprofloxacin",3,3,0,1,3,MODERATE
+334,"Chloroquine, Ranitidine",2,1,1,1,0,MODERATE
+335,"Metformin, Hydrochlorothiazide, Erythromycin, Prednisone",4,6,0,2,4,MODERATE
+336,"Ranitidine, Verapamil",2,1,0,1,0,MODERATE
+337,"Magnesium, Amlodipine, Amitriptyline, Zolpidem",4,6,0,1,5,MODERATE
+338,"Simvastatin, Magnesium, Diazepam, Zolpidem",4,6,0,1,5,MODERATE
+339,"Paracetamol, Ibuprofen",2,1,0,1,1,MODERATE
+340,"Magnesium, Metoprolol, Ibuprofen",3,3,0,1,2,MODERATE
+341,"Prednisone, Atenolol, Magnesium, Simvastatin",4,6,4,1,2,MODERATE
+342,"Dexamethasone, Omeprazole",2,1,1,1,0,MODERATE
+343,"Furosemide, Lisinopril, Erythromycin",3,3,0,1,2,MODERATE
+344,"Atenolol, Tramadol",2,1,1,1,0,MODERATE
+345,"Metoprolol, Chloroquine, Verapamil",3,3,0,1,3,MODERATE
+346,"Omeprazole, Calcium, Ciprofloxacin",3,3,1,1,2,MODERATE
+347,"Ibuprofen, Diltiazem",2,1,0,1,1,MODERATE
+348,"Metformin, Ramipril, Clopidogrel",3,3,0,1,2,MODERATE
+349,"Diltiazem, Atenolol, Clarithromycin",3,3,1,1,2,MODERATE
+350,"Zolpidem, Hydrochlorothiazide, Glimepiride",3,3,0,1,3,MODERATE
+351,"Erythromycin, Sertraline, Ciprofloxacin",3,3,0,3,0,MODERATE
+352,"Clopidogrel, Ramipril",2,1,1,1,0,MODERATE
+353,"Omeprazole, Ibuprofen, Diazepam",3,3,1,1,1,MODERATE
+354,"Metoprolol, Clarithromycin",2,1,0,1,1,MODERATE
+355,"Paracetamol, Chloroquine, Ranitidine, Ramipril",4,6,0,1,5,MODERATE
+356,"Simvastatin, Levothyroxine",2,1,0,1,1,MODERATE
+357,"Propranolol, Metformin, Verapamil, Clarithromycin",4,6,1,1,5,MODERATE
+358,"Glimepiride, Dexamethasone, Fluoxetine",3,3,0,1,2,MODERATE
+359,"Amitriptyline, Verapamil, Lisinopril, Calcium",4,6,0,2,4,MODERATE
+360,"Sertraline, Lisinopril",2,1,0,1,1,MODERATE
+361,"Metformin, Sertraline",2,1,0,1,1,MODERATE
+362,"Fluoxetine, Clopidogrel",2,1,0,1,0,MODERATE
+363,"Diazepam, Amlodipine, Chloroquine",3,3,0,2,1,MODERATE
+364,"Glimepiride, Magnesium, Zolpidem",3,3,0,1,2,MODERATE
+365,"Glimepiride, Vitamin D",2,1,0,1,1,MODERATE
+366,"Levothyroxine, Chloroquine, Ciprofloxacin",3,3,0,1,2,MODERATE
+367,"Ibuprofen, Ranitidine, Atorvastatin, Magnesium",4,6,0,1,5,MODERATE
+368,"Ramipril, Furosemide",2,1,0,1,0,MODERATE
+369,"Calcium, Prednisone, Glimepiride",3,3,0,2,1,MODERATE
+370,"Alprazolam, Warfarin, Lisinopril",3,3,0,1,3,MODERATE
+371,"Amitriptyline, Tramadol, Prednisone, Lisinopril",4,6,0,2,4,MODERATE
+372,"Ciprofloxacin, Zolpidem, Omeprazole",3,3,0,2,1,MODERATE
+373,"Lisinopril, Warfarin, Hydrochlorothiazide",3,3,0,1,3,MODERATE
+374,"Magnesium, Fluoxetine, Atorvastatin, Metoprolol",4,6,2,1,3,MODERATE
+375,"Tramadol, Ciprofloxacin, Hydrochlorothiazide",3,3,0,1,3,MODERATE
+376,"Dexamethasone, Ramipril, Fluoxetine",3,3,1,1,1,MODERATE
+377,"Dexamethasone, Vitamin D",2,1,0,1,0,MODERATE
+378,"Ibuprofen, Simvastatin, Verapamil",3,3,0,1,2,MODERATE
+379,"Clarithromycin, Zolpidem, Magnesium",3,3,1,1,1,MODERATE
+380,"Aspirin, Dexamethasone, Ranitidine, Insulin",4,6,2,2,2,MODERATE
+381,"Magnesium, Ramipril",2,1,0,1,0,MODERATE
+382,"Insulin, Glimepiride, Diltiazem",3,3,0,1,3,MODERATE
+383,"Amlodipine, Furosemide",2,1,0,1,1,MODERATE
+384,"Paracetamol, Erythromycin",2,1,0,1,1,MODERATE
+385,"Sertraline, Tramadol, Alprazolam",3,3,0,1,2,MODERATE
+386,"Calcium, Atenolol, Sertraline",3,3,0,1,2,MODERATE
+387,"Paracetamol, Amitriptyline, Aspirin, Amlodipine",4,6,0,1,5,MODERATE
+388,"Diltiazem, Insulin, Verapamil",3,3,0,1,2,MODERATE
+389,"Paracetamol, Warfarin",2,1,0,1,0,MODERATE
+390,"Ciprofloxacin, Ibuprofen",2,1,0,1,1,MODERATE
+391,"Clarithromycin, Levothyroxine, Omeprazole, Simvastatin",4,6,1,1,5,MODERATE
+392,"Tramadol, Hydrochlorothiazide",2,1,0,1,0,MODERATE
+393,"Insulin, Erythromycin, Ramipril, Dexamethasone",4,6,0,1,6,MODERATE
+394,"Vitamin D, Tramadol, Simvastatin",3,3,1,1,2,MODERATE
+395,"Lisinopril, Propranolol",2,1,0,1,1,MODERATE
+396,"Tramadol, Levothyroxine, Omeprazole",3,3,0,1,2,MODERATE
+397,"Chloroquine, Fluoxetine",2,1,0,1,1,MODERATE
+398,"Ramipril, Insulin, Propranolol",3,3,0,1,3,MODERATE
+399,"Lisinopril, Diltiazem, Prednisone, Zolpidem",4,6,1,2,3,MODERATE
+400,"Insulin, Glimepiride, Erythromycin",3,3,1,1,2,MODERATE
+401,"Ramipril, Magnesium, Diltiazem, Lisinopril",4,6,0,1,6,MODERATE
+402,"Clopidogrel, Metformin, Levothyroxine, Propranolol",4,6,0,3,3,MODERATE
+403,"Verapamil, Amlodipine, Tramadol",3,3,0,1,3,MODERATE
+404,"Hydrochlorothiazide, Fluoxetine",2,1,1,1,0,MODERATE
+405,"Glimepiride, Clarithromycin, Furosemide",3,3,1,1,1,MODERATE
+406,"Sertraline, Metformin",2,1,0,1,1,MODERATE
+407,"Ibuprofen, Calcium, Fluoxetine, Aspirin",4,6,2,1,3,MODERATE
+408,"Dexamethasone, Aspirin, Alprazolam",3,3,0,1,3,MODERATE
+409,"Ramipril, Lisinopril",2,1,0,1,1,MODERATE
+410,"Amitriptyline, Vitamin D",2,1,0,1,1,MODERATE
+411,"Calcium, Ibuprofen, Chloroquine",3,3,0,1,2,MODERATE
+412,"Thyroxine, Ibuprofen",2,1,0,1,1,MODERATE
+413,"Tramadol, Ranitidine, Ramipril, Ciprofloxacin",4,6,0,1,6,MODERATE
+414,"Ramipril, Tramadol, Amitriptyline, Clopidogrel",4,6,0,1,6,MODERATE
+415,"Diazepam, Warfarin, Fluoxetine",3,3,0,1,3,MODERATE
+416,"Clopidogrel, Propranolol, Amlodipine, Calcium",4,6,0,1,5,MODERATE
+417,"Calcium, Ranitidine",2,1,0,1,1,MODERATE
+418,"Dexamethasone, Levothyroxine, Lisinopril, Alprazolam",4,6,1,1,5,MODERATE
+419,"Sertraline, Tramadol",2,1,1,1,0,MODERATE
+420,"Zolpidem, Metoprolol, Clopidogrel",3,3,1,1,2,MODERATE
+421,"Tramadol, Prednisone, Sertraline, Clopidogrel",4,6,2,1,4,MODERATE
+422,"Fluoxetine, Ciprofloxacin, Levothyroxine, Ranitidine",4,6,1,1,5,MODERATE
+423,"Insulin, Lisinopril, Omeprazole, Clarithromycin",4,6,0,1,5,MODERATE
+424,"Furosemide, Diltiazem",2,1,0,1,1,MODERATE
+425,"Diltiazem, Calcium, Tramadol",3,3,0,2,1,MODERATE
+426,"Chloroquine, Aspirin, Diltiazem, Metoprolol",4,6,1,2,3,MODERATE
+427,"Clarithromycin, Simvastatin, Dexamethasone, Glimepiride",4,6,2,2,2,MODERATE
+428,"Metoprolol, Warfarin, Atorvastatin, Insulin",4,6,0,1,6,MODERATE
+429,"Dexamethasone, Aspirin, Ramipril",3,3,1,1,2,MODERATE
+430,"Dexamethasone, Warfarin, Levothyroxine, Sertraline",4,6,0,1,5,MODERATE
+431,"Paracetamol, Propranolol, Vitamin D",3,3,1,2,0,MODERATE
+432,"Hydrochlorothiazide, Levothyroxine, Paracetamol",3,3,0,1,3,MODERATE
+433,"Insulin, Simvastatin",2,1,0,1,1,MODERATE
+434,"Vitamin D, Clopidogrel, Atenolol",3,3,0,1,2,MODERATE
+435,"Chloroquine, Alprazolam, Amlodipine, Metformin",4,6,0,3,3,MODERATE
+436,"Lisinopril, Prednisone, Dexamethasone, Insulin",4,6,0,3,3,MODERATE
+437,"Tramadol, Amlodipine, Fluoxetine, Magnesium",4,6,1,1,5,MODERATE
+438,"Erythromycin, Ranitidine",2,1,0,1,1,MODERATE
+439,"Thyroxine, Paracetamol, Clopidogrel, Amlodipine",4,6,0,1,6,MODERATE
+440,"Alprazolam, Erythromycin",2,1,0,1,1,MODERATE
+441,"Amlodipine, Warfarin, Chloroquine, Paracetamol",4,6,1,2,3,MODERATE
+442,"Vitamin D, Ranitidine, Aspirin, Ibuprofen",4,6,1,1,5,MODERATE
+443,"Clopidogrel, Metformin",2,1,0,1,1,MODERATE
+444,"Chloroquine, Paracetamol, Prednisone, Propranolol",4,6,0,1,6,MODERATE
+445,"Ramipril, Dexamethasone, Thyroxine, Paracetamol",4,6,0,2,4,MODERATE
+446,"Ramipril, Dexamethasone, Amitriptyline, Insulin",4,6,0,2,4,MODERATE
+447,"Clopidogrel, Zolpidem",2,1,0,1,0,MODERATE
+448,"Sertraline, Atenolol, Simvastatin",3,3,1,1,1,MODERATE
+449,"Propranolol, Chloroquine, Atenolol",3,3,0,1,3,MODERATE
+450,"Levothyroxine, Zolpidem, Sertraline, Vitamin D",4,6,0,1,6,MODERATE
+451,"Lisinopril, Fluoxetine, Metoprolol, Propranolol",4,6,1,1,5,MODERATE
+452,"Diazepam, Simvastatin, Ibuprofen, Chloroquine",4,6,1,1,5,MODERATE
+453,"Vitamin D, Levothyroxine, Fluoxetine, Omeprazole",4,6,0,1,5,MODERATE
+454,"Glimepiride, Diazepam, Zolpidem, Diltiazem",4,6,0,2,4,MODERATE
+455,"Furosemide, Atenolol",2,1,0,1,1,MODERATE
+456,"Zolpidem, Simvastatin, Insulin",3,3,0,1,2,MODERATE
+457,"Ciprofloxacin, Magnesium, Simvastatin",3,3,1,1,2,MODERATE
+458,"Verapamil, Clarithromycin, Ciprofloxacin, Alprazolam",4,6,1,1,4,MODERATE
+459,"Zolpidem, Glimepiride",2,1,1,1,0,MODERATE
+460,"Vitamin D, Hydrochlorothiazide, Dexamethasone, Atorvastatin",4,6,2,1,3,MODERATE
+461,"Simvastatin, Levothyroxine",2,1,0,1,1,MODERATE
+462,"Amlodipine, Atorvastatin, Metformin, Tramadol",4,6,1,2,3,MODERATE
+463,"Ibuprofen, Omeprazole",2,1,0,1,1,MODERATE
+464,"Calcium, Omeprazole, Amitriptyline",3,3,0,1,2,MODERATE
+465,"Thyroxine, Diazepam",2,1,0,1,1,MODERATE
+466,"Fluoxetine, Ranitidine, Diazepam, Lisinopril",4,6,0,2,4,MODERATE
+467,"Aspirin, Metformin",2,1,0,1,1,MODERATE
+468,"Clarithromycin, Metoprolol",2,1,0,1,0,MODERATE
+469,"Atorvastatin, Ranitidine, Zolpidem, Ibuprofen",4,6,2,1,3,MODERATE
+470,"Omeprazole, Paracetamol, Warfarin, Propranolol",4,6,0,2,4,MODERATE
+471,"Furosemide, Erythromycin, Simvastatin",3,3,1,1,1,MODERATE
+472,"Prednisone, Tramadol",2,1,0,1,1,MODERATE
+473,"Sertraline, Diazepam, Thyroxine, Amlodipine",4,6,1,1,5,MODERATE
+474,"Vitamin D, Tramadol",2,1,1,1,0,MODERATE
+475,"Diltiazem, Dexamethasone, Lisinopril",3,3,0,1,3,MODERATE
+476,"Atorvastatin, Warfarin, Metformin",3,3,0,1,2,MODERATE
+477,"Simvastatin, Lisinopril",2,1,0,1,1,MODERATE
+478,"Tramadol, Ranitidine",2,1,0,1,1,MODERATE
+479,"Metformin, Magnesium",2,1,0,1,1,MODERATE
+480,"Thyroxine, Ranitidine, Prednisone, Dexamethasone",4,6,0,1,5,MODERATE
+481,"Chloroquine, Levothyroxine, Atenolol, Amitriptyline",4,6,0,1,5,MODERATE
+482,"Clopidogrel, Thyroxine",2,1,0,1,0,MODERATE
+483,"Magnesium, Clarithromycin",2,1,0,1,1,MODERATE
+484,"Furosemide, Atenolol",2,1,0,1,0,MODERATE
+485,"Lisinopril, Magnesium",2,1,0,1,1,MODERATE
+486,"Hydrochlorothiazide, Propranolol, Dexamethasone, Aspirin",4,6,1,1,4,MODERATE
+487,"Paracetamol, Clarithromycin, Diltiazem, Thyroxine",4,6,1,1,5,MODERATE
+488,"Atorvastatin, Prednisone, Vitamin D",3,3,1,1,1,MODERATE
+489,"Warfarin, Ibuprofen, Clopidogrel, Atorvastatin",4,6,1,1,4,MODERATE
+490,"Propranolol, Levothyroxine, Warfarin",3,3,1,1,2,MODERATE
+491,"Thyroxine, Ranitidine, Atenolol",3,3,1,1,2,MODERATE
+492,"Ciprofloxacin, Chloroquine",2,1,0,1,1,MODERATE
+493,"Glimepiride, Ramipril, Clarithromycin, Zolpidem",4,6,1,1,4,MODERATE
+494,"Insulin, Glimepiride",2,1,1,1,0,MODERATE
+495,"Ramipril, Verapamil, Erythromycin, Clarithromycin",4,6,2,1,3,MODERATE
+496,"Ibuprofen, Magnesium",2,1,0,1,1,MODERATE
+497,"Magnesium, Atorvastatin, Clopidogrel",3,3,0,1,2,MODERATE
+498,"Propranolol, Tramadol, Sertraline, Warfarin",4,6,0,1,6,MODERATE
+499,"Ramipril, Fluoxetine",2,1,0,1,1,MODERATE
+500,"Atenolol, Lisinopril, Vitamin D, Metformin",4,6,0,1,5,MODERATE
+501,"Furosemide, Levothyroxine",2,1,0,1,1,MODERATE
+502,"Thyroxine, Hydrochlorothiazide, Furosemide",3,3,0,1,3,MODERATE
+503,"Propranolol, Paracetamol, Diltiazem, Omeprazole",4,6,1,1,4,MODERATE
+504,"Aspirin, Alprazolam, Propranolol",3,3,0,1,2,MODERATE
+505,"Vitamin D, Verapamil, Insulin, Hydrochlorothiazide",4,6,1,1,5,MODERATE
+506,"Atorvastatin, Warfarin",2,1,0,1,1,MODERATE
+507,"Atorvastatin, Clopidogrel",2,1,0,1,0,MODERATE
+508,"Amlodipine, Thyroxine",2,1,0,1,1,MODERATE
+509,"Glimepiride, Amlodipine, Metoprolol",3,3,0,1,2,MODERATE
+510,"Ibuprofen, Fluoxetine",2,1,0,1,1,MODERATE
+511,"Magnesium, Thyroxine",2,1,0,1,0,MODERATE
+512,"Omeprazole, Atorvastatin, Aspirin",3,3,0,1,3,MODERATE
+513,"Diltiazem, Amitriptyline, Clarithromycin",3,3,1,1,2,MODERATE
+514,"Paracetamol, Tramadol, Omeprazole, Simvastatin",4,6,2,1,3,MODERATE
+515,"Verapamil, Dexamethasone, Sertraline",3,3,0,1,2,MODERATE
+516,"Metformin, Erythromycin, Diazepam, Ibuprofen",4,6,0,1,6,MODERATE
+517,"Amlodipine, Aspirin, Ranitidine, Metformin",4,6,0,3,3,MODERATE
+518,"Vitamin D, Thyroxine, Verapamil, Metformin",4,6,2,3,1,MODERATE
+519,"Lisinopril, Zolpidem, Tramadol",3,3,0,1,2,MODERATE
+520,"Thyroxine, Magnesium",2,1,0,1,0,MODERATE
+521,"Ramipril, Atorvastatin, Chloroquine, Clopidogrel",4,6,2,1,4,MODERATE
+522,"Diltiazem, Alprazolam",2,1,0,1,1,MODERATE
+523,"Diazepam, Hydrochlorothiazide",2,1,0,1,1,MODERATE
+524,"Diltiazem, Ibuprofen, Ranitidine, Magnesium",4,6,1,1,4,MODERATE
+525,"Fluoxetine, Hydrochlorothiazide",2,1,0,1,1,MODERATE
+526,"Simvastatin, Atorvastatin",2,1,0,1,1,MODERATE
+527,"Omeprazole, Chloroquine",2,1,0,1,1,MODERATE
+528,"Ibuprofen, Thyroxine",2,1,0,1,0,MODERATE
+529,"Amitriptyline, Thyroxine, Atorvastatin",3,3,0,1,2,MODERATE
+530,"Clopidogrel, Ramipril, Dexamethasone",3,3,1,1,2,MODERATE
+531,"Dexamethasone, Verapamil, Magnesium, Ramipril",4,6,0,1,5,MODERATE
+532,"Clopidogrel, Ranitidine, Propranolol, Magnesium",4,6,0,1,6,MODERATE
+533,"Omeprazole, Clopidogrel, Tramadol",3,3,0,2,1,MODERATE
+534,"Ranitidine, Insulin, Clopidogrel",3,3,1,1,1,MODERATE
+535,"Chloroquine, Dexamethasone, Erythromycin",3,3,1,1,2,MODERATE
+536,"Alprazolam, Fluoxetine, Diltiazem, Levothyroxine",4,6,1,1,4,MODERATE
+537,"Vitamin D, Glimepiride, Paracetamol",3,3,1,1,1,MODERATE
+538,"Lisinopril, Ranitidine, Thyroxine",3,3,0,3,0,MODERATE
+539,"Levothyroxine, Aspirin, Furosemide, Fluoxetine",4,6,0,2,4,MODERATE
+540,"Verapamil, Vitamin D",2,1,0,1,1,MODERATE
+541,"Diazepam, Prednisone",2,1,0,1,0,MODERATE
+542,"Tramadol, Thyroxine",2,1,0,1,0,MODERATE
+543,"Amlodipine, Levothyroxine, Ranitidine",3,3,0,1,2,MODERATE
+544,"Sertraline, Atenolol, Fluoxetine, Ramipril",4,6,0,1,5,MODERATE
+545,"Ibuprofen, Furosemide",2,1,0,1,1,MODERATE
+546,"Ciprofloxacin, Furosemide, Zolpidem, Lisinopril",4,6,0,1,5,MODERATE
+547,"Prednisone, Amlodipine",2,1,0,1,1,MODERATE
+548,"Erythromycin, Lisinopril, Furosemide",3,3,0,1,3,MODERATE
+549,"Propranolol, Hydrochlorothiazide, Ibuprofen",3,3,0,1,2,MODERATE
+550,"Clarithromycin, Amitriptyline, Alprazolam",3,3,0,1,3,MODERATE
+551,"Atorvastatin, Fluoxetine, Glimepiride",3,3,1,1,1,MODERATE
+552,"Atenolol, Chloroquine",2,1,0,1,1,MODERATE
+553,"Ranitidine, Aspirin",2,1,0,1,1,MODERATE
+554,"Metformin, Vitamin D",2,1,0,1,1,MODERATE
+555,"Sertraline, Metformin, Fluoxetine, Clarithromycin",4,6,0,3,3,MODERATE
+556,"Insulin, Ibuprofen, Tramadol",3,3,1,1,1,MODERATE
+557,"Magnesium, Insulin, Clopidogrel, Glimepiride",4,6,1,1,4,MODERATE
+558,"Metformin, Omeprazole, Ibuprofen",3,3,1,1,2,MODERATE
+559,"Warfarin, Ramipril, Calcium, Thyroxine",4,6,0,1,6,MODERATE
+560,"Paracetamol, Metformin, Magnesium, Calcium",4,6,0,1,6,MODERATE
+561,"Omeprazole, Clarithromycin, Aspirin, Metoprolol",4,6,1,1,5,MODERATE
+562,"Insulin, Clopidogrel, Aspirin",3,3,1,2,0,MODERATE
+563,"Propranolol, Alprazolam, Amlodipine, Sertraline",4,6,2,1,4,MODERATE
+564,"Magnesium, Ibuprofen, Alprazolam",3,3,0,1,3,MODERATE
+565,"Omeprazole, Vitamin D",2,1,0,1,0,MODERATE
+566,"Clopidogrel, Tramadol, Amitriptyline",3,3,0,1,3,MODERATE
+567,"Zolpidem, Amlodipine",2,1,0,1,1,MODERATE
+568,"Verapamil, Sertraline",2,1,0,1,1,MODERATE
+569,"Insulin, Omeprazole, Sertraline",3,3,1,1,2,MODERATE
+570,"Atorvastatin, Omeprazole",2,1,0,1,1,MODERATE
+571,"Omeprazole, Amitriptyline",2,1,0,1,1,MODERATE
+572,"Metformin, Atorvastatin, Simvastatin, Sertraline",4,6,1,1,4,MODERATE
+573,"Levothyroxine, Dexamethasone",2,1,1,1,0,MODERATE
+574,"Tramadol, Furosemide, Clarithromycin",3,3,2,1,0,MODERATE
+575,"Tramadol, Sertraline",2,1,1,1,0,MODERATE
+576,"Clopidogrel, Propranolol, Omeprazole, Clarithromycin",4,6,1,4,1,MODERATE
+577,"Paracetamol, Diazepam",2,1,0,1,1,MODERATE
+578,"Insulin, Warfarin, Diltiazem, Amlodipine",4,6,0,1,6,MODERATE
+579,"Insulin, Hydrochlorothiazide, Thyroxine",3,3,1,1,2,MODERATE
+580,"Amitriptyline, Insulin, Zolpidem, Simvastatin",4,6,0,3,3,MODERATE
+581,"Ciprofloxacin, Ramipril, Clopidogrel, Vitamin D",4,6,0,3,3,MODERATE
+582,"Warfarin, Insulin, Erythromycin",3,3,0,1,3,MODERATE
+583,"Warfarin, Hydrochlorothiazide",2,1,0,1,0,MODERATE
+584,"Ciprofloxacin, Metformin, Chloroquine",3,3,1,1,1,MODERATE
+585,"Clopidogrel, Amlodipine, Ibuprofen, Dexamethasone",4,6,0,1,5,MODERATE
+586,"Amitriptyline, Thyroxine, Hydrochlorothiazide, Diazepam",4,6,0,1,6,MODERATE
+587,"Sertraline, Amlodipine, Prednisone, Propranolol",4,6,0,1,6,MODERATE
+588,"Diazepam, Erythromycin",2,1,0,1,1,MODERATE
+589,"Ciprofloxacin, Fluoxetine",2,1,0,1,1,MODERATE
+590,"Propranolol, Verapamil",2,1,0,1,1,MODERATE
+591,"Fluoxetine, Tramadol",2,1,0,1,0,MODERATE
+592,"Insulin, Ciprofloxacin, Thyroxine",3,3,0,1,3,MODERATE
+593,"Amitriptyline, Verapamil, Warfarin, Metformin",4,6,2,1,4,MODERATE
+594,"Verapamil, Furosemide, Ramipril",3,3,0,1,2,MODERATE
+595,"Thyroxine, Simvastatin",2,1,0,1,1,MODERATE
+596,"Paracetamol, Dexamethasone",2,1,0,1,1,MODERATE
+597,"Lisinopril, Sertraline, Diazepam, Prednisone",4,6,0,1,6,MODERATE
+598,"Clarithromycin, Clopidogrel, Insulin, Ramipril",4,6,1,1,5,MODERATE
+599,"Ibuprofen, Dexamethasone",2,1,0,1,1,MODERATE
+600,"Ibuprofen, Clarithromycin",2,1,0,1,1,MODERATE
+601,"Clarithromycin, Verapamil",2,1,0,1,0,MODERATE
+602,"Clarithromycin, Warfarin",2,1,1,1,0,MODERATE
+603,"Verapamil, Metformin",2,1,0,1,1,MODERATE
+604,"Diltiazem, Chloroquine",2,1,0,1,1,MODERATE
+605,"Diazepam, Tramadol, Zolpidem, Ranitidine",4,6,1,1,4,MODERATE
+606,"Hydrochlorothiazide, Sertraline",2,1,0,1,1,MODERATE
+607,"Atenolol, Ranitidine, Metoprolol",3,3,0,1,2,MODERATE
+608,"Ranitidine, Magnesium, Atorvastatin, Sertraline",4,6,3,1,2,MODERATE
+609,"Atorvastatin, Simvastatin, Dexamethasone",3,3,0,1,2,MODERATE
+610,"Zolpidem, Sertraline",2,1,0,1,1,MODERATE
+611,"Propranolol, Atorvastatin, Clarithromycin",3,3,0,1,2,MODERATE
+612,"Alprazolam, Simvastatin",2,1,1,1,0,MODERATE
+613,"Tramadol, Aspirin",2,1,0,1,1,MODERATE
+614,"Prednisone, Ramipril, Sertraline",3,3,1,1,1,MODERATE
+615,"Magnesium, Fluoxetine, Ciprofloxacin, Prednisone",4,6,0,3,3,MODERATE
+616,"Warfarin, Amitriptyline",2,1,0,1,1,MODERATE
+617,"Propranolol, Omeprazole, Sertraline",3,3,1,1,1,MODERATE
+618,"Calcium, Ranitidine, Propranolol, Clopidogrel",4,6,1,1,5,MODERATE
+619,"Thyroxine, Amlodipine, Calcium, Glimepiride",4,6,1,2,3,MODERATE
+620,"Ramipril, Atorvastatin, Clopidogrel, Metoprolol",4,6,0,1,5,MODERATE
+621,"Propranolol, Lisinopril, Clarithromycin",3,3,0,1,2,MODERATE
+622,"Omeprazole, Diltiazem, Clopidogrel",3,3,1,1,1,MODERATE
+623,"Chloroquine, Calcium",2,1,0,1,1,MODERATE
+624,"Ibuprofen, Diltiazem",2,1,0,1,1,MODERATE
+625,"Dexamethasone, Fluoxetine",2,1,0,1,1,MODERATE
+626,"Amitriptyline, Omeprazole, Ciprofloxacin",3,3,1,1,2,MODERATE
+627,"Paracetamol, Insulin, Simvastatin",3,3,0,1,3,MODERATE
+628,"Simvastatin, Warfarin, Verapamil, Omeprazole",4,6,0,1,5,MODERATE
+629,"Diltiazem, Metformin, Dexamethasone",3,3,0,1,3,MODERATE
+630,"Alprazolam, Zolpidem",2,1,1,1,0,MODERATE
+631,"Diazepam, Chloroquine",2,1,0,1,1,MODERATE
+632,"Ciprofloxacin, Omeprazole, Sertraline, Levothyroxine",4,6,1,2,3,MODERATE
+633,"Clopidogrel, Prednisone, Alprazolam, Glimepiride",4,6,0,3,3,MODERATE
+634,"Tramadol, Erythromycin, Atenolol",3,3,0,1,3,MODERATE
+635,"Diazepam, Calcium, Metformin, Atenolol",4,6,1,1,5,MODERATE
+636,"Erythromycin, Metoprolol, Insulin, Furosemide",4,6,1,1,4,MODERATE
+637,"Dexamethasone, Diltiazem, Calcium, Levothyroxine",4,6,0,2,4,MODERATE
+638,"Insulin, Zolpidem, Clarithromycin",3,3,0,1,2,MODERATE
+639,"Insulin, Atenolol, Prednisone",3,3,0,1,2,MODERATE
+640,"Diazepam, Insulin",2,1,0,1,0,MODERATE
+641,"Calcium, Propranolol, Atenolol",3,3,0,1,3,MODERATE
+642,"Calcium, Vitamin D",2,1,1,1,0,MODERATE
+643,"Alprazolam, Clarithromycin, Chloroquine, Hydrochlorothiazide",4,6,0,2,4,MODERATE
+644,"Ramipril, Ranitidine, Dexamethasone, Atorvastatin",4,6,0,1,5,MODERATE
+645,"Lisinopril, Paracetamol, Vitamin D, Metformin",4,6,1,4,1,MODERATE
+646,"Warfarin, Amlodipine, Sertraline, Aspirin",4,6,1,1,5,MODERATE
+647,"Sertraline, Alprazolam",2,1,0,1,1,MODERATE
+648,"Omeprazole, Aspirin, Propranolol",3,3,1,1,2,MODERATE
+649,"Clopidogrel, Paracetamol",2,1,0,1,1,MODERATE
+650,"Magnesium, Omeprazole, Vitamin D",3,3,0,1,3,MODERATE
+651,"Amitriptyline, Thyroxine, Propranolol",3,3,1,0,3,HIGH
+652,"Amitriptyline, Omeprazole, Atorvastatin, Vitamin D, Hydrochlorothiazide",5,10,1,2,8,HIGH
+653,"Tramadol, Amitriptyline, Amlodipine, Atorvastatin",4,6,1,0,5,HIGH
+654,"Ibuprofen, Paracetamol, Hydrochlorothiazide, Atorvastatin, Verapamil, Chloroquine",6,15,1,3,11,HIGH
+655,"Atorvastatin, Ibuprofen, Warfarin, Ranitidine, Chloroquine",5,10,1,3,6,HIGH
+656,"Metoprolol, Sertraline, Furosemide, Diltiazem, Warfarin",5,10,1,2,8,HIGH
+657,"Atorvastatin, Vitamin D, Insulin, Calcium, Thyroxine",5,10,2,1,7,HIGH
+658,"Glimepiride, Ibuprofen, Prednisone, Atenolol, Simvastatin",5,10,1,3,6,HIGH
+659,"Calcium, Warfarin, Omeprazole, Magnesium, Glimepiride, Clarithromycin, Thyroxine",7,21,3,2,16,HIGH
+660,"Calcium, Warfarin, Sertraline, Propranolol, Verapamil, Ciprofloxacin, Diazepam",7,21,4,4,13,HIGH
+661,"Sertraline, Ciprofloxacin, Tramadol, Glimepiride, Ramipril, Simvastatin",6,15,2,3,10,HIGH
+662,"Levothyroxine, Ramipril, Diltiazem, Clarithromycin",4,6,1,3,3,HIGH
+663,"Atenolol, Clopidogrel, Levothyroxine, Omeprazole, Vitamin D",5,10,1,4,6,HIGH
+664,"Clarithromycin, Zolpidem, Furosemide, Verapamil, Dexamethasone",5,10,1,3,6,HIGH
+665,"Prednisone, Ciprofloxacin, Verapamil, Alprazolam",4,6,1,2,4,HIGH
+666,"Clopidogrel, Ranitidine, Warfarin",3,3,1,0,2,HIGH
+667,"Omeprazole, Verapamil, Diltiazem, Ciprofloxacin, Levothyroxine",5,10,1,2,8,HIGH
+668,"Calcium, Levothyroxine, Chloroquine, Insulin, Atenolol",5,10,1,1,8,HIGH
+669,"Fluoxetine, Paracetamol, Diazepam, Omeprazole",4,6,1,0,6,HIGH
+670,"Thyroxine, Warfarin, Dexamethasone, Ranitidine, Levothyroxine, Zolpidem, Insulin",7,21,2,2,17,HIGH
+671,"Amitriptyline, Clarithromycin, Magnesium, Propranolol, Warfarin",5,10,1,1,9,HIGH
+672,"Diltiazem, Atenolol, Magnesium, Erythromycin, Ibuprofen, Sertraline",6,15,1,1,14,HIGH
+673,"Diltiazem, Omeprazole, Tramadol, Dexamethasone, Vitamin D",5,10,2,1,7,HIGH
+674,"Atenolol, Diazepam, Dexamethasone, Metformin",4,6,1,1,4,HIGH
+675,"Tramadol, Verapamil, Simvastatin",3,3,1,0,3,HIGH
+676,"Erythromycin, Thyroxine, Atenolol, Ciprofloxacin",4,6,1,2,4,HIGH
+677,"Levothyroxine, Amlodipine, Insulin, Vitamin D",4,6,1,1,5,HIGH
+678,"Tramadol, Dexamethasone, Zolpidem, Levothyroxine, Amlodipine, Ranitidine",6,15,1,6,8,HIGH
+679,"Magnesium, Calcium, Erythromycin, Sertraline",4,6,1,1,4,HIGH
+680,"Insulin, Prednisone, Glimepiride, Amitriptyline, Atenolol, Magnesium",6,15,2,2,11,HIGH
+681,"Magnesium, Ranitidine, Ciprofloxacin, Sertraline",4,6,1,2,4,HIGH
+682,"Glimepiride, Sertraline, Amlodipine",3,3,1,0,2,HIGH
+683,"Atorvastatin, Clarithromycin, Furosemide, Metformin, Propranolol, Metoprolol",6,15,1,4,10,HIGH
+684,"Diazepam, Levothyroxine, Simvastatin, Propranolol, Dexamethasone, Aspirin",6,15,2,4,9,HIGH
+685,"Verapamil, Atenolol, Atorvastatin, Insulin, Diazepam, Ciprofloxacin, Simvastatin",7,21,3,3,15,HIGH
+686,"Tramadol, Verapamil, Thyroxine, Fluoxetine",4,6,1,3,3,HIGH
+687,"Insulin, Aspirin, Ramipril, Ranitidine, Glimepiride",5,10,1,2,7,HIGH
+688,"Levothyroxine, Lisinopril, Diltiazem, Calcium, Ranitidine",5,10,1,1,9,HIGH
+689,"Aspirin, Sertraline, Verapamil, Paracetamol, Metformin",5,10,1,2,7,HIGH
+690,"Alprazolam, Vitamin D, Glimepiride, Hydrochlorothiazide, Diltiazem, Magnesium",6,15,1,6,8,HIGH
+691,"Metoprolol, Lisinopril, Prednisone",3,3,1,1,2,HIGH
+692,"Metoprolol, Diltiazem, Omeprazole, Levothyroxine",4,6,1,2,4,HIGH
+693,"Glimepiride, Ciprofloxacin, Furosemide, Vitamin D, Amlodipine, Clarithromycin",6,15,1,1,13,HIGH
+694,"Magnesium, Furosemide, Fluoxetine, Paracetamol, Ramipril",5,10,3,3,4,HIGH
+695,"Ramipril, Dexamethasone, Metoprolol, Magnesium, Ibuprofen",5,10,1,4,5,HIGH
+696,"Metoprolol, Tramadol, Simvastatin, Glimepiride, Zolpidem, Diazepam",6,15,1,5,10,HIGH
+697,"Zolpidem, Propranolol, Omeprazole, Amitriptyline, Diazepam, Ibuprofen, Glimepiride",7,21,3,4,14,HIGH
+698,"Hydrochlorothiazide, Propranolol, Clopidogrel",3,3,1,2,1,HIGH
+699,"Hydrochlorothiazide, Glimepiride, Amitriptyline",3,3,1,1,2,HIGH
+700,"Ranitidine, Metoprolol, Prednisone, Amitriptyline, Paracetamol, Omeprazole, Atenolol",7,21,1,5,16,HIGH
+701,"Calcium, Lisinopril, Insulin",3,3,1,0,3,HIGH
+702,"Magnesium, Atorvastatin, Metformin, Dexamethasone",4,6,2,0,4,HIGH
+703,"Erythromycin, Metformin, Glimepiride, Clopidogrel, Lisinopril, Sertraline",6,15,1,4,11,HIGH
+704,"Thyroxine, Vitamin D, Dexamethasone",3,3,1,1,2,HIGH
+705,"Propranolol, Clarithromycin, Levothyroxine, Ranitidine, Amitriptyline, Omeprazole",6,15,3,4,8,HIGH
+706,"Amitriptyline, Propranolol, Furosemide, Erythromycin",4,6,1,3,3,HIGH
+707,"Chloroquine, Amitriptyline, Prednisone",3,3,1,0,2,HIGH
+708,"Fluoxetine, Insulin, Zolpidem",3,3,1,1,2,HIGH
+709,"Simvastatin, Amlodipine, Metformin, Verapamil",4,6,2,1,3,HIGH
+710,"Paracetamol, Clopidogrel, Propranolol, Omeprazole, Fluoxetine, Chloroquine",6,15,1,4,10,HIGH
+711,"Omeprazole, Fluoxetine, Glimepiride, Paracetamol, Atorvastatin, Ibuprofen, Lisinopril",7,21,3,2,16,HIGH
+712,"Paracetamol, Chloroquine, Clarithromycin",3,3,1,1,2,HIGH
+713,"Prednisone, Ranitidine, Amlodipine",3,3,1,0,3,HIGH
+714,"Dexamethasone, Zolpidem, Clopidogrel, Sertraline, Tramadol",5,10,1,5,5,HIGH
+715,"Vitamin D, Prednisone, Glimepiride, Alprazolam, Fluoxetine, Ciprofloxacin",6,15,2,1,12,HIGH
+716,"Furosemide, Propranolol, Dexamethasone, Aspirin, Omeprazole, Magnesium, Zolpidem",7,21,3,3,15,HIGH
+717,"Clarithromycin, Tramadol, Ranitidine, Lisinopril, Diltiazem, Erythromycin, Vitamin D",7,21,2,6,13,HIGH
+718,"Propranolol, Metformin, Alprazolam, Atenolol, Insulin, Vitamin D",6,15,1,3,11,HIGH
+719,"Aspirin, Zolpidem, Levothyroxine, Chloroquine, Sertraline, Glimepiride",6,15,1,4,10,HIGH
+720,"Paracetamol, Amitriptyline, Metformin, Alprazolam, Ramipril, Clopidogrel",6,15,2,1,12,HIGH
+721,"Sertraline, Verapamil, Clarithromycin",3,3,1,0,2,HIGH
+722,"Chloroquine, Clarithromycin, Metoprolol, Tramadol, Ibuprofen, Magnesium, Simvastatin",7,21,2,5,14,HIGH
+723,"Lisinopril, Magnesium, Metformin, Sertraline",4,6,1,1,4,HIGH
+724,"Omeprazole, Fluoxetine, Ramipril, Paracetamol, Warfarin",5,10,1,3,6,HIGH
+725,"Hydrochlorothiazide, Metformin, Atorvastatin",3,3,1,1,2,HIGH
+726,"Thyroxine, Prednisone, Erythromycin, Metoprolol, Levothyroxine",5,10,1,1,8,HIGH
+727,"Diltiazem, Ramipril, Warfarin, Chloroquine",4,6,1,2,3,HIGH
+728,"Metformin, Paracetamol, Levothyroxine",3,3,1,3,0,HIGH
+729,"Atenolol, Magnesium, Dexamethasone, Calcium, Metoprolol",5,10,3,1,6,HIGH
+730,"Alprazolam, Erythromycin, Sertraline",3,3,1,1,1,HIGH
+731,"Ibuprofen, Ciprofloxacin, Ramipril, Amlodipine",4,6,1,0,6,HIGH
+732,"Thyroxine, Diazepam, Metoprolol, Furosemide",4,6,1,0,6,HIGH
+733,"Chloroquine, Lisinopril, Atorvastatin",3,3,1,1,2,HIGH
+734,"Insulin, Warfarin, Clopidogrel, Clarithromycin, Magnesium, Alprazolam, Atorvastatin",7,21,4,2,15,HIGH
+735,"Vitamin D, Tramadol, Warfarin, Clarithromycin, Paracetamol",5,10,2,3,5,HIGH
+736,"Fluoxetine, Dexamethasone, Amlodipine, Glimepiride, Atenolol, Vitamin D, Hydrochlorothiazide",7,21,2,2,17,HIGH
+737,"Erythromycin, Ibuprofen, Atenolol, Metformin, Fluoxetine, Calcium",6,15,1,3,11,HIGH
+738,"Amitriptyline, Erythromycin, Ranitidine, Simvastatin, Ramipril, Fluoxetine",6,15,1,3,11,HIGH
+739,"Dexamethasone, Levothyroxine, Tramadol, Furosemide, Omeprazole, Diltiazem",6,15,3,2,10,HIGH
+740,"Clarithromycin, Atorvastatin, Metoprolol, Verapamil, Thyroxine, Levothyroxine, Furosemide",7,21,2,1,18,HIGH
+741,"Simvastatin, Aspirin, Calcium, Levothyroxine, Ciprofloxacin, Metformin, Dexamethasone",7,21,1,5,15,HIGH
+742,"Dexamethasone, Metoprolol, Aspirin, Magnesium, Verapamil, Atorvastatin",6,15,1,3,11,HIGH
+743,"Metformin, Vitamin D, Amitriptyline",3,3,1,1,2,HIGH
+744,"Glimepiride, Lisinopril, Vitamin D",3,3,1,0,3,HIGH
+745,"Warfarin, Zolpidem, Paracetamol, Calcium",4,6,1,1,4,HIGH
+746,"Omeprazole, Zolpidem, Glimepiride, Tramadol, Alprazolam, Insulin",6,15,3,2,10,HIGH
+747,"Aspirin, Propranolol, Ciprofloxacin, Magnesium, Diazepam, Chloroquine, Simvastatin",7,21,3,3,15,HIGH
+748,"Atenolol, Diltiazem, Clarithromycin, Fluoxetine",4,6,2,3,1,HIGH
+749,"Thyroxine, Prednisone, Hydrochlorothiazide",3,3,1,0,3,HIGH
+750,"Fluoxetine, Ibuprofen, Verapamil",3,3,1,0,3,HIGH
+751,"Omeprazole, Levothyroxine, Metformin, Lisinopril, Amitriptyline, Paracetamol, Amlodipine",7,21,2,2,17,HIGH
+752,"Metformin, Clopidogrel, Glimepiride, Aspirin",4,6,1,3,2,HIGH
+753,"Magnesium, Amitriptyline, Sertraline",3,3,1,1,1,HIGH
+754,"Zolpidem, Tramadol, Atenolol",3,3,1,0,3,HIGH
+755,"Dexamethasone, Diazepam, Omeprazole, Simvastatin, Paracetamol",5,10,2,1,7,HIGH
+756,"Fluoxetine, Glimepiride, Lisinopril, Insulin",4,6,1,0,6,HIGH
+757,"Ranitidine, Glimepiride, Magnesium, Diazepam, Levothyroxine",5,10,2,0,8,HIGH
+758,"Clarithromycin, Furosemide, Lisinopril, Ciprofloxacin, Tramadol, Omeprazole, Amlodipine",7,21,1,3,17,HIGH
+759,"Sertraline, Prednisone, Paracetamol",3,3,1,0,3,HIGH
+760,"Warfarin, Glimepiride, Erythromycin, Metformin, Sertraline",5,10,1,4,5,HIGH
+761,"Calcium, Zolpidem, Sertraline, Diltiazem",4,6,1,1,4,HIGH
+762,"Propranolol, Prednisone, Magnesium, Furosemide, Ranitidine, Diltiazem",6,15,1,3,11,HIGH
+763,"Thyroxine, Atenolol, Metformin, Lisinopril, Furosemide, Clarithromycin, Paracetamol",7,21,2,6,13,HIGH
+764,"Atenolol, Diltiazem, Lisinopril, Hydrochlorothiazide, Omeprazole",5,10,1,3,7,HIGH
+765,"Vitamin D, Verapamil, Ibuprofen, Diltiazem, Chloroquine",5,10,1,1,8,HIGH
+766,"Clarithromycin, Diazepam, Vitamin D, Glimepiride",4,6,1,1,5,HIGH
+767,"Simvastatin, Ranitidine, Metoprolol, Amitriptyline",4,6,1,1,4,HIGH
+768,"Chloroquine, Dexamethasone, Alprazolam, Amitriptyline",4,6,1,1,4,HIGH
+769,"Ramipril, Ranitidine, Dexamethasone",3,3,1,1,2,HIGH
+770,"Levothyroxine, Atorvastatin, Ciprofloxacin, Warfarin",4,6,1,2,3,HIGH
+771,"Amlodipine, Ranitidine, Lisinopril, Clopidogrel, Hydrochlorothiazide, Paracetamol",6,15,1,4,10,HIGH
+772,"Ramipril, Metoprolol, Vitamin D",3,3,1,0,2,HIGH
+773,"Ciprofloxacin, Zolpidem, Amitriptyline, Hydrochlorothiazide, Metformin, Thyroxine",6,15,1,4,10,HIGH
+774,"Diltiazem, Diazepam, Metformin, Calcium, Ibuprofen, Warfarin, Ranitidine",7,21,4,0,17,HIGH
+775,"Sertraline, Simvastatin, Thyroxine, Zolpidem",4,6,1,2,4,HIGH
+776,"Ranitidine, Ibuprofen, Metformin, Lisinopril, Vitamin D",5,10,1,3,7,HIGH
+777,"Prednisone, Sertraline, Fluoxetine, Atorvastatin, Calcium",5,10,1,1,9,HIGH
+778,"Metoprolol, Metformin, Tramadol, Lisinopril, Furosemide, Verapamil, Atenolol",7,21,1,4,16,HIGH
+779,"Calcium, Sertraline, Paracetamol, Verapamil, Atorvastatin, Diltiazem",6,15,1,2,12,HIGH
+780,"Clopidogrel, Thyroxine, Warfarin",3,3,1,2,0,HIGH
+781,"Zolpidem, Hydrochlorothiazide, Simvastatin, Amitriptyline",4,6,1,3,3,HIGH
+782,"Insulin, Alprazolam, Dexamethasone",3,3,1,2,1,HIGH
+783,"Ibuprofen, Omeprazole, Clopidogrel, Amlodipine, Amitriptyline, Diazepam, Thyroxine",7,21,1,5,15,HIGH
+784,"Glimepiride, Amlodipine, Dexamethasone, Levothyroxine",4,6,1,0,6,HIGH
+785,"Metformin, Ibuprofen, Paracetamol, Verapamil, Amitriptyline, Vitamin D, Tramadol",7,21,2,8,11,HIGH
+786,"Tramadol, Warfarin, Propranolol, Ramipril",4,6,1,5,1,HIGH
+787,"Simvastatin, Levothyroxine, Chloroquine, Aspirin, Atorvastatin, Hydrochlorothiazide, Amitriptyline",7,21,1,7,14,HIGH
+788,"Prednisone, Thyroxine, Magnesium",3,3,1,2,1,HIGH
+789,"Sertraline, Magnesium, Lisinopril, Furosemide, Calcium, Erythromycin",6,15,1,3,12,HIGH
+790,"Metformin, Propranolol, Dexamethasone, Hydrochlorothiazide, Fluoxetine, Insulin",6,15,2,2,11,HIGH
+791,"Dexamethasone, Fluoxetine, Prednisone, Vitamin D, Diazepam",5,10,2,2,6,HIGH
+792,"Warfarin, Diltiazem, Sertraline, Atenolol, Calcium",5,10,2,2,6,HIGH
+793,"Fluoxetine, Levothyroxine, Aspirin, Propranolol, Clarithromycin",5,10,2,2,6,HIGH
+794,"Paracetamol, Metformin, Levothyroxine, Diltiazem",4,6,1,2,4,HIGH
+795,"Calcium, Amitriptyline, Warfarin, Tramadol",4,6,1,0,6,HIGH
+796,"Thyroxine, Alprazolam, Ranitidine",3,3,1,1,1,HIGH
+797,"Atenolol, Diazepam, Omeprazole, Ciprofloxacin, Sertraline, Chloroquine, Lisinopril",7,21,4,5,12,HIGH
+798,"Propranolol, Thyroxine, Prednisone",3,3,1,0,3,HIGH
+799,"Fluoxetine, Atorvastatin, Diazepam, Ramipril, Thyroxine, Metoprolol, Amlodipine",7,21,4,4,13,HIGH
+800,"Ciprofloxacin, Clopidogrel, Lisinopril, Thyroxine, Vitamin D, Zolpidem, Paracetamol",7,21,2,5,14,HIGH
+801,"Clarithromycin, Thyroxine, Metoprolol, Insulin, Atorvastatin, Erythromycin",6,15,1,5,9,HIGH
+802,"Furosemide, Aspirin, Fluoxetine, Ranitidine, Prednisone, Alprazolam",6,15,2,3,10,HIGH
+803,"Calcium, Paracetamol, Metoprolol, Amitriptyline, Ranitidine",5,10,1,2,8,HIGH
+804,"Sertraline, Amitriptyline, Clarithromycin, Dexamethasone, Propranolol",5,10,2,1,7,HIGH
+805,"Ibuprofen, Metformin, Erythromycin, Lisinopril, Clopidogrel, Aspirin",6,15,2,1,12,HIGH
+806,"Vitamin D, Atenolol, Levothyroxine",3,3,1,1,2,HIGH
+807,"Omeprazole, Diltiazem, Aspirin, Atenolol, Thyroxine",5,10,1,1,8,HIGH
+808,"Amlodipine, Vitamin D, Verapamil",3,3,1,1,1,HIGH
+809,"Ramipril, Thyroxine, Propranolol",3,3,1,0,3,HIGH
+810,"Glimepiride, Amlodipine, Aspirin, Magnesium, Ramipril, Amitriptyline",6,15,2,3,10,HIGH
+811,"Insulin, Metformin, Calcium",3,3,1,0,3,HIGH
+812,"Insulin, Atorvastatin, Paracetamol, Furosemide, Diltiazem, Propranolol",6,15,2,3,10,HIGH
+813,"Calcium, Atorvastatin, Furosemide, Ibuprofen, Warfarin, Verapamil, Paracetamol",7,21,5,4,12,HIGH
+814,"Metformin, Alprazolam, Verapamil",3,3,1,1,2,HIGH
+815,"Prednisone, Erythromycin, Vitamin D, Aspirin, Clarithromycin",5,10,1,2,8,HIGH
+816,"Tramadol, Simvastatin, Levothyroxine, Metformin, Fluoxetine, Erythromycin",6,15,2,3,10,HIGH
+817,"Magnesium, Metformin, Atenolol, Omeprazole",4,6,1,1,5,HIGH
+818,"Aspirin, Calcium, Amlodipine, Erythromycin, Simvastatin",5,10,2,3,5,HIGH
+819,"Atorvastatin, Calcium, Diltiazem, Thyroxine, Lisinopril",5,10,1,1,9,HIGH
+820,"Ciprofloxacin, Diltiazem, Omeprazole, Clarithromycin, Metformin",5,10,2,1,7,HIGH
+821,"Clopidogrel, Lisinopril, Ramipril, Insulin, Amitriptyline",5,10,1,1,9,HIGH
+822,"Amitriptyline, Ciprofloxacin, Clopidogrel, Insulin, Atenolol, Clarithromycin, Diazepam",7,21,4,3,14,HIGH
+823,"Chloroquine, Glimepiride, Atorvastatin",3,3,1,1,2,HIGH
+824,"Paracetamol, Chloroquine, Metformin, Erythromycin, Levothyroxine",5,10,3,1,6,HIGH
+825,"Clarithromycin, Ibuprofen, Amlodipine, Simvastatin, Paracetamol",5,10,3,2,5,HIGH
+826,"Chloroquine, Metformin, Sertraline, Alprazolam",4,6,1,1,5,HIGH
+827,"Diazepam, Magnesium, Dexamethasone, Amlodipine, Sertraline, Simvastatin",6,15,2,6,7,HIGH
+828,"Insulin, Ciprofloxacin, Fluoxetine, Zolpidem",4,6,1,2,4,HIGH
+829,"Calcium, Ramipril, Erythromycin, Alprazolam, Chloroquine, Diltiazem, Amlodipine",7,21,1,5,16,HIGH
+830,"Alprazolam, Levothyroxine, Sertraline, Simvastatin, Verapamil, Fluoxetine, Tramadol",7,21,2,5,14,HIGH
+831,"Zolpidem, Diazepam, Diltiazem, Magnesium, Amitriptyline, Warfarin, Erythromycin",7,21,3,6,12,HIGH
+832,"Prednisone, Atorvastatin, Aspirin",3,3,1,1,2,HIGH
+833,"Ranitidine, Diltiazem, Vitamin D, Aspirin",4,6,1,0,5,HIGH
+834,"Magnesium, Diltiazem, Glimepiride",3,3,1,0,3,HIGH
+835,"Magnesium, Warfarin, Glimepiride, Diazepam, Aspirin, Ciprofloxacin",6,15,3,2,10,HIGH
+836,"Levothyroxine, Ciprofloxacin, Alprazolam, Metformin, Diazepam, Metoprolol",6,15,3,3,9,HIGH
+837,"Lisinopril, Chloroquine, Verapamil, Propranolol, Amlodipine, Prednisone",6,15,1,1,13,HIGH
+838,"Clarithromycin, Ciprofloxacin, Clopidogrel, Amitriptyline, Ramipril, Magnesium",6,15,5,4,6,HIGH
+839,"Diltiazem, Vitamin D, Chloroquine",3,3,1,1,1,HIGH
+840,"Verapamil, Lisinopril, Hydrochlorothiazide",3,3,1,0,2,HIGH
+841,"Magnesium, Calcium, Chloroquine",3,3,1,2,1,HIGH
+842,"Amlodipine, Chloroquine, Metformin, Erythromycin, Magnesium, Alprazolam, Simvastatin",7,21,3,6,12,HIGH
+843,"Chloroquine, Ciprofloxacin, Calcium, Verapamil, Amlodipine, Metoprolol, Levothyroxine",7,21,2,4,15,HIGH
+844,"Sertraline, Propranolol, Glimepiride, Erythromycin",4,6,1,2,4,HIGH
+845,"Lisinopril, Amlodipine, Glimepiride",3,3,1,0,3,HIGH
+846,"Zolpidem, Glimepiride, Thyroxine, Dexamethasone, Hydrochlorothiazide, Ibuprofen, Amlodipine",7,21,3,3,15,HIGH
+847,"Clopidogrel, Atorvastatin, Furosemide, Ramipril",4,6,1,2,3,HIGH
+848,"Diltiazem, Vitamin D, Thyroxine",3,3,1,1,2,HIGH
+849,"Hydrochlorothiazide, Vitamin D, Simvastatin, Warfarin, Tramadol, Erythromycin",6,15,1,0,14,HIGH
+850,"Zolpidem, Hydrochlorothiazide, Metformin, Diazepam, Lisinopril, Ranitidine",6,15,3,4,8,HIGH
+851,"Thyroxine, Diazepam, Hydrochlorothiazide, Magnesium, Diltiazem",5,10,1,3,7,HIGH
+852,"Dexamethasone, Thyroxine, Atorvastatin, Verapamil, Ranitidine, Metformin, Amitriptyline",7,21,5,4,12,HIGH
+853,"Amlodipine, Diltiazem, Ramipril, Clopidogrel, Thyroxine, Clarithromycin, Metformin",7,21,6,1,14,HIGH
+854,"Propranolol, Metformin, Magnesium, Dexamethasone, Ranitidine",5,10,1,3,7,HIGH
+855,"Vitamin D, Atenolol, Diltiazem, Fluoxetine, Ciprofloxacin, Magnesium",6,15,1,1,14,HIGH
+856,"Simvastatin, Prednisone, Thyroxine, Furosemide, Metoprolol, Atenolol",6,15,3,2,10,HIGH
+857,"Calcium, Thyroxine, Metformin, Ranitidine, Furosemide, Ibuprofen, Amitriptyline",7,21,2,6,13,HIGH
+858,"Diltiazem, Sertraline, Dexamethasone, Vitamin D",4,6,1,1,5,HIGH
+859,"Amitriptyline, Metformin, Chloroquine, Calcium",4,6,1,0,5,HIGH
+860,"Sertraline, Warfarin, Aspirin",3,3,1,0,2,HIGH
+861,"Ranitidine, Chloroquine, Aspirin, Alprazolam, Sertraline, Ibuprofen",6,15,2,2,11,HIGH
+862,"Clarithromycin, Atenolol, Amitriptyline, Paracetamol",4,6,1,2,4,HIGH
+863,"Amlodipine, Ramipril, Omeprazole, Metoprolol, Thyroxine, Verapamil",6,15,1,4,10,HIGH
+864,"Clopidogrel, Chloroquine, Atorvastatin, Diltiazem, Erythromycin, Omeprazole, Verapamil",7,21,4,9,8,HIGH
+865,"Tramadol, Clarithromycin, Metformin",3,3,1,0,3,HIGH
+866,"Glimepiride, Alprazolam, Warfarin, Verapamil, Lisinopril, Metformin",6,15,2,3,10,HIGH
+867,"Chloroquine, Warfarin, Lisinopril, Metoprolol, Atorvastatin, Insulin",6,15,1,4,10,HIGH
+868,"Metformin, Diazepam, Aspirin, Atorvastatin",4,6,1,2,4,HIGH
+869,"Clarithromycin, Calcium, Ciprofloxacin, Ramipril, Levothyroxine, Amitriptyline",6,15,1,2,13,HIGH
+870,"Warfarin, Prednisone, Lisinopril",3,3,1,2,1,HIGH
+871,"Sertraline, Atorvastatin, Chloroquine",3,3,1,2,1,HIGH
+872,"Metoprolol, Propranolol, Erythromycin, Diazepam, Insulin, Magnesium",6,15,1,2,12,HIGH
+873,"Ciprofloxacin, Verapamil, Vitamin D, Levothyroxine, Fluoxetine",5,10,2,2,6,HIGH
+874,"Hydrochlorothiazide, Tramadol, Alprazolam, Furosemide, Aspirin",5,10,3,1,6,HIGH
+875,"Amlodipine, Ibuprofen, Ciprofloxacin, Chloroquine, Simvastatin",5,10,1,1,8,HIGH
+876,"Magnesium, Warfarin, Glimepiride, Sertraline, Hydrochlorothiazide",5,10,1,2,7,HIGH
+877,"Tramadol, Diltiazem, Dexamethasone, Atenolol, Furosemide, Metoprolol, Magnesium",7,21,4,7,10,HIGH
+878,"Clopidogrel, Amlodipine, Erythromycin, Insulin, Atenolol, Calcium",6,15,1,3,12,HIGH
+879,"Metformin, Erythromycin, Zolpidem",3,3,1,0,3,HIGH
+880,"Atorvastatin, Diltiazem, Calcium",3,3,1,1,2,HIGH
+881,"Ramipril, Omeprazole, Paracetamol",3,3,1,3,0,HIGH
+882,"Prednisone, Ranitidine, Ciprofloxacin, Atorvastatin, Verapamil, Furosemide",6,15,3,1,11,HIGH
+883,"Omeprazole, Erythromycin, Thyroxine, Hydrochlorothiazide, Furosemide",5,10,1,2,8,HIGH
+884,"Furosemide, Diltiazem, Metformin, Dexamethasone",4,6,2,1,3,HIGH
+885,"Vitamin D, Ranitidine, Dexamethasone, Furosemide",4,6,1,3,3,HIGH
+886,"Thyroxine, Clopidogrel, Magnesium, Lisinopril",4,6,1,1,4,HIGH
+887,"Clarithromycin, Sertraline, Ibuprofen, Lisinopril, Hydrochlorothiazide, Thyroxine, Fluoxetine",7,21,2,4,15,HIGH
+888,"Ibuprofen, Ranitidine, Furosemide, Dexamethasone, Alprazolam, Hydrochlorothiazide, Ramipril",7,21,3,1,17,HIGH
+889,"Omeprazole, Glimepiride, Diltiazem, Magnesium",4,6,1,0,6,HIGH
+890,"Omeprazole, Fluoxetine, Clopidogrel, Aspirin, Thyroxine, Atorvastatin",6,15,3,4,8,HIGH
+891,"Omeprazole, Ciprofloxacin, Glimepiride, Clopidogrel, Metformin",5,10,2,1,7,HIGH
+892,"Ibuprofen, Metoprolol, Warfarin, Diltiazem, Vitamin D, Furosemide, Magnesium",7,21,3,5,13,HIGH
+893,"Diazepam, Levothyroxine, Metformin",3,3,1,1,2,HIGH
+894,"Sertraline, Ciprofloxacin, Thyroxine, Lisinopril, Diltiazem, Prednisone",6,15,4,1,10,HIGH
+895,"Propranolol, Vitamin D, Prednisone, Calcium, Magnesium, Aspirin",6,15,1,1,13,HIGH
+896,"Clarithromycin, Amlodipine, Thyroxine",3,3,1,1,2,HIGH
+897,"Fluoxetine, Glimepiride, Prednisone, Propranolol, Ramipril, Metoprolol, Diltiazem",7,21,4,1,16,HIGH
+898,"Verapamil, Paracetamol, Hydrochlorothiazide",3,3,1,0,2,HIGH
+899,"Furosemide, Diazepam, Magnesium, Lisinopril, Atorvastatin",5,10,2,0,8,HIGH
+900,"Tramadol, Paracetamol, Sertraline, Metoprolol, Thyroxine",5,10,1,3,7,HIGH
+901,"Chloroquine, Erythromycin, Paracetamol, Ibuprofen, Prednisone, Clopidogrel",6,15,1,1,13,HIGH
+902,"Glimepiride, Ranitidine, Furosemide, Clopidogrel",4,6,2,1,3,HIGH
+903,"Levothyroxine, Diazepam, Omeprazole, Atenolol, Amlodipine, Vitamin D",6,15,1,5,10,HIGH
+904,"Hydrochlorothiazide, Amitriptyline, Clopidogrel, Erythromycin, Furosemide, Amlodipine",6,15,2,5,8,HIGH
+905,"Dexamethasone, Metoprolol, Lisinopril, Furosemide, Calcium, Levothyroxine",6,15,1,0,14,HIGH
+906,"Clopidogrel, Verapamil, Sertraline, Atorvastatin, Clarithromycin",5,10,2,1,7,HIGH
+907,"Ibuprofen, Magnesium, Metformin, Glimepiride, Chloroquine, Alprazolam, Vitamin D",7,21,3,2,16,HIGH
+908,"Glimepiride, Verapamil, Vitamin D",3,3,1,0,3,HIGH
+909,"Insulin, Thyroxine, Metoprolol, Aspirin",4,6,1,2,4,HIGH
+910,"Propranolol, Insulin, Levothyroxine, Magnesium",4,6,1,2,3,HIGH
+911,"Insulin, Sertraline, Ranitidine, Prednisone, Diazepam, Clarithromycin",6,15,1,2,12,HIGH
+912,"Warfarin, Glimepiride, Furosemide",3,3,1,2,1,HIGH
+913,"Alprazolam, Erythromycin, Zolpidem, Ciprofloxacin, Clarithromycin",5,10,1,1,9,HIGH
+914,"Thyroxine, Warfarin, Amlodipine, Prednisone, Levothyroxine",5,10,1,1,8,HIGH
+915,"Atenolol, Aspirin, Ciprofloxacin, Fluoxetine, Atorvastatin, Prednisone, Erythromycin",7,21,4,4,13,HIGH
+916,"Sertraline, Aspirin, Amlodipine, Diazepam, Verapamil",5,10,1,2,8,HIGH
+917,"Calcium, Alprazolam, Diazepam, Propranolol, Ranitidine, Clarithromycin, Atorvastatin",7,21,2,4,15,HIGH
+918,"Lisinopril, Alprazolam, Chloroquine, Magnesium, Amlodipine",5,10,1,2,7,HIGH
+919,"Aspirin, Amitriptyline, Metoprolol, Atenolol, Omeprazole",5,10,1,3,6,HIGH
+920,"Hydrochlorothiazide, Amitriptyline, Diltiazem, Ciprofloxacin, Thyroxine",5,10,1,2,8,HIGH
+921,"Magnesium, Simvastatin, Thyroxine",3,3,1,0,3,HIGH
+922,"Zolpidem, Insulin, Propranolol",3,3,1,0,3,HIGH
+923,"Ramipril, Furosemide, Paracetamol, Simvastatin, Warfarin",5,10,1,5,5,HIGH
+924,"Glimepiride, Erythromycin, Metformin",3,3,1,1,2,HIGH
+925,"Fluoxetine, Amlodipine, Ramipril, Clopidogrel",4,6,1,0,5,HIGH
+926,"Insulin, Metformin, Diazepam, Tramadol, Paracetamol",5,10,1,1,9,HIGH
+927,"Vitamin D, Atorvastatin, Zolpidem, Atenolol, Furosemide, Levothyroxine",6,15,3,5,7,HIGH
+928,"Levothyroxine, Amlodipine, Lisinopril, Aspirin, Omeprazole",5,10,1,3,6,HIGH
+929,"Glimepiride, Lisinopril, Prednisone, Metformin",4,6,1,0,6,HIGH
+930,"Ramipril, Verapamil, Amlodipine",3,3,1,0,2,HIGH
+931,"Sertraline, Simvastatin, Furosemide, Thyroxine",4,6,1,2,4,HIGH
+932,"Furosemide, Dexamethasone, Lisinopril, Sertraline, Prednisone",5,10,4,1,5,HIGH
+933,"Aspirin, Fluoxetine, Magnesium, Chloroquine",4,6,1,0,5,HIGH
+934,"Prednisone, Aspirin, Paracetamol, Levothyroxine, Ranitidine",5,10,1,1,9,HIGH
+935,"Thyroxine, Amlodipine, Ciprofloxacin, Ramipril",4,6,1,3,2,HIGH
+936,"Thyroxine, Metoprolol, Omeprazole, Metformin, Paracetamol, Verapamil, Amlodipine",7,21,2,3,16,HIGH
+937,"Amlodipine, Verapamil, Paracetamol, Glimepiride",4,6,1,2,3,HIGH
+938,"Paracetamol, Ciprofloxacin, Furosemide, Hydrochlorothiazide, Erythromycin",5,10,2,1,7,HIGH
+939,"Tramadol, Prednisone, Lisinopril, Ibuprofen",4,6,1,1,4,HIGH
+940,"Thyroxine, Clopidogrel, Dexamethasone, Paracetamol, Ramipril",5,10,1,1,8,HIGH
+941,"Clopidogrel, Atorvastatin, Metoprolol",3,3,1,0,3,HIGH
+942,"Ramipril, Clopidogrel, Ibuprofen, Thyroxine, Diazepam, Calcium",6,15,1,6,8,HIGH
+943,"Verapamil, Amitriptyline, Tramadol, Chloroquine, Hydrochlorothiazide",5,10,1,1,8,HIGH
+944,"Warfarin, Atenolol, Verapamil, Ibuprofen, Clarithromycin, Diazepam, Lisinopril",7,21,5,4,12,HIGH
+945,"Atorvastatin, Magnesium, Glimepiride, Verapamil, Vitamin D",5,10,1,1,8,HIGH
+946,"Amitriptyline, Hydrochlorothiazide, Sertraline",3,3,1,0,2,HIGH
+947,"Amitriptyline, Ciprofloxacin, Amlodipine, Clopidogrel, Propranolol",5,10,3,3,4,HIGH
+948,"Lisinopril, Atenolol, Magnesium, Aspirin, Tramadol, Clopidogrel, Alprazolam",7,21,2,4,15,HIGH
+949,"Glimepiride, Alprazolam, Ramipril, Diltiazem",4,6,1,1,5,HIGH
+950,"Atenolol, Clarithromycin, Tramadol, Calcium, Levothyroxine",5,10,1,3,6,HIGH
+951,"Hydrochlorothiazide, Metformin, Magnesium",3,3,1,1,2,HIGH
+952,"Ramipril, Verapamil, Amitriptyline, Ciprofloxacin, Aspirin, Hydrochlorothiazide",6,15,1,6,8,HIGH
+953,"Fluoxetine, Clarithromycin, Sertraline, Warfarin, Omeprazole",5,10,1,0,9,HIGH
+954,"Glimepiride, Insulin, Chloroquine, Tramadol",4,6,1,0,5,HIGH
+955,"Glimepiride, Atenolol, Clopidogrel, Fluoxetine",4,6,1,1,4,HIGH
+956,"Prednisone, Metoprolol, Calcium, Zolpidem",4,6,1,2,4,HIGH
+957,"Sertraline, Calcium, Glimepiride, Metformin, Magnesium",5,10,1,4,6,HIGH
+958,"Ibuprofen, Tramadol, Vitamin D, Verapamil, Diazepam, Erythromycin, Omeprazole",7,21,1,6,14,HIGH
+959,"Warfarin, Calcium, Amitriptyline, Clopidogrel",4,6,2,3,1,HIGH
+960,"Chloroquine, Metoprolol, Clopidogrel, Amlodipine",4,6,1,2,3,HIGH
+961,"Amlodipine, Magnesium, Clopidogrel",3,3,1,1,2,HIGH
+962,"Thyroxine, Magnesium, Levothyroxine",3,3,1,1,2,HIGH
+963,"Atorvastatin, Ranitidine, Ramipril",3,3,1,1,2,HIGH
+964,"Aspirin, Fluoxetine, Hydrochlorothiazide, Ramipril, Erythromycin, Alprazolam",6,15,1,5,9,HIGH
+965,"Diltiazem, Aspirin, Metformin, Verapamil",4,6,1,2,4,HIGH
+966,"Ibuprofen, Atenolol, Sertraline, Metoprolol, Chloroquine",5,10,2,2,6,HIGH
+967,"Prednisone, Ibuprofen, Simvastatin, Verapamil",4,6,1,0,5,HIGH
+968,"Amlodipine, Magnesium, Ciprofloxacin",3,3,1,1,2,HIGH
+969,"Paracetamol, Ibuprofen, Metformin, Vitamin D",4,6,1,1,4,HIGH
+970,"Amitriptyline, Metoprolol, Aspirin, Tramadol, Ibuprofen, Sertraline",6,15,3,1,11,HIGH
+971,"Hydrochlorothiazide, Metoprolol, Ciprofloxacin, Erythromycin, Alprazolam",5,10,1,2,7,HIGH
+972,"Atorvastatin, Zolpidem, Clarithromycin, Levothyroxine, Prednisone, Chloroquine",6,15,1,2,13,HIGH
+973,"Amlodipine, Diazepam, Ciprofloxacin, Aspirin, Warfarin, Ramipril",6,15,1,2,12,HIGH
+974,"Ciprofloxacin, Furosemide, Levothyroxine",3,3,1,0,2,HIGH
+975,"Amlodipine, Lisinopril, Ciprofloxacin",3,3,1,0,3,HIGH
+976,"Omeprazole, Verapamil, Aspirin, Insulin",4,6,1,3,3,HIGH
+977,"Metoprolol, Diltiazem, Erythromycin",3,3,1,0,3,HIGH
+978,"Diazepam, Hydrochlorothiazide, Vitamin D, Erythromycin",4,6,1,0,5,HIGH
+979,"Diazepam, Insulin, Metoprolol, Tramadol, Ramipril, Zolpidem",6,15,1,2,12,HIGH
+980,"Calcium, Sertraline, Zolpidem, Verapamil, Amitriptyline",5,10,1,3,6,HIGH
+981,"Propranolol, Ibuprofen, Clopidogrel, Aspirin",4,6,2,2,2,HIGH
+982,"Magnesium, Omeprazole, Clopidogrel, Diazepam, Glimepiride, Furosemide",6,15,3,2,10,HIGH
+983,"Ranitidine, Magnesium, Alprazolam, Clarithromycin",4,6,1,0,5,HIGH
+984,"Sertraline, Paracetamol, Ramipril, Fluoxetine",4,6,1,1,4,HIGH
+985,"Furosemide, Propranolol, Atorvastatin, Metformin, Omeprazole",5,10,2,0,8,HIGH
+986,"Amitriptyline, Erythromycin, Hydrochlorothiazide, Omeprazole",4,6,1,3,3,HIGH
+987,"Clopidogrel, Magnesium, Furosemide, Zolpidem",4,6,1,1,4,HIGH
+988,"Thyroxine, Vitamin D, Zolpidem, Amlodipine",4,6,1,0,6,HIGH
+989,"Tramadol, Calcium, Ramipril, Insulin, Thyroxine",5,10,1,2,7,HIGH
+990,"Propranolol, Paracetamol, Lisinopril, Insulin, Aspirin, Warfarin, Dexamethasone",7,21,4,5,12,HIGH
+991,"Prednisone, Tramadol, Ciprofloxacin, Dexamethasone, Sertraline, Simvastatin, Amlodipine",7,21,4,6,11,HIGH
+992,"Insulin, Lisinopril, Glimepiride, Warfarin, Tramadol",5,10,2,1,7,HIGH
+993,"Aspirin, Magnesium, Insulin, Prednisone",4,6,1,1,4,HIGH
+994,"Amlodipine, Ibuprofen, Prednisone, Erythromycin, Alprazolam, Atorvastatin, Hydrochlorothiazide",7,21,3,3,15,HIGH
+995,"Atorvastatin, Magnesium, Vitamin D",3,3,1,1,2,HIGH
+996,"Dexamethasone, Vitamin D, Glimepiride, Ibuprofen, Insulin, Ciprofloxacin",6,15,1,4,10,HIGH
+997,"Levothyroxine, Diazepam, Ciprofloxacin, Insulin, Calcium, Fluoxetine, Propranolol",7,21,4,5,12,HIGH
+998,"Amitriptyline, Aspirin, Warfarin, Vitamin D, Diazepam, Hydrochlorothiazide",6,15,2,3,10,HIGH
+999,"Alprazolam, Dexamethasone, Tramadol, Metformin, Prednisone, Zolpidem, Warfarin",7,21,2,3,16,HIGH
+1000,"Amlodipine, Levothyroxine, Sertraline, Tramadol, Ramipril, Atorvastatin",6,15,1,5,10,HIGH

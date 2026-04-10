@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PolypharmGuard - Drug Interaction Detector</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            width: 100%;
+        }
+
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+
+        .main-card {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            padding: 40px;
+            margin-bottom: 30px;
+        }
+
+        .tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #e0e0e0;
+        }
+
+        .tab-button {
+            padding: 12px 25px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 1em;
+            color: #666;
+            border-bottom: 3px solid transparent;
+            transition: all 0.3s;
+        }
+
+        .tab-button.active {
+            color: #667eea;
+            border-bottom-color: #667eea;
+        }
+
+        .tab-button:hover {
+            color: #667eea;
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .file-input-wrapper {
+            position: relative;
+            overflow: hidden;
+            display: inline-block;
+            width: 100%;
+        }
+
+        .file-input-wrapper input[type=file] {
+            position: absolute;
+            left: -9999px;
+        }
+
+        .file-input-label {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px;
+            border: 2px dashed #667eea;
+            border-radius: 8px;
+            background: #f5f5f5;
+            cursor: pointer;
+            transition: all 0.3s;
+            color: #667eea;
+            font-weight: 600;
+        }
+
+        .file-input-label:hover {
+            background: #f0f0f0;
+            border-color: #764ba2;
+            color: #764ba2;
+        }
+
+        .file-input-label.dragover {
+            background: #e8e4f3;
+            border-color: #764ba2;
+            color: #764ba2;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.95em;
+            resize: vertical;
+            min-height: 150px;
+        }
+
+        textarea:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+
+        .button-group {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        button {
+            flex: 1;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .btn-primary:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .btn-secondary {
+            background: #e0e0e0;
+            color: #333;
+        }
+
+        .btn-secondary:hover {
+            background: #d0d0d0;
+        }
+
+        .loading {
+            display: none;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .spinner {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #667eea;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 10px;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .result-card {
+            background: #f9f9f9;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 20px;
+            display: none;
+            border-left: 4px solid #667eea;
+        }
+
+        .result-card.success {
+            display: block;
+            border-left-color: #667eea;
+        }
+
+        .result-card.high-risk {
+            border-left-color: #ff6b6b;
+            background: #ffe0e0;
+        }
+
+        .result-card.moderate-risk {
+            border-left-color: #ffa500;
+            background: #fff5e0;
+        }
+
+        .result-card.low-risk {
+            border-left-color: #51cf66;
+            background: #f0f9ff;
+        }
+
+        .risk-badge {
+            display: inline-block;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-weight: 600;
+            margin: 5px 0;
+            font-size: 0.95em;
+        }
+
+        .risk-badge.HIGH {
+            background: #ff6b6b;
+            color: white;
+        }
+
+        .risk-badge.MODERATE {
+            background: #ffa500;
+            color: white;
+        }
+
+        .risk-badge.LOW {
+            background: #51cf66;
+            color: white;
+        }
+
+        .result-section {
+            margin-bottom: 20px;
+        }
+
+        .result-section h3 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+
+        .medicines-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .medicine-tag {
+            background: #667eea;
+            color: white;
+            padding: 6px 12px;
+            border-radius: 15px;
+            font-size: 0.9em;
+        }
+
+        /* About Section Styles */
+        .about-section {
+            line-height: 1.8;
+        }
+
+        .about-section h2 {
+            color: #667eea;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+
+        .about-section h3 {
+            color: #764ba2;
+            margin-top: 20px;
+            margin-bottom: 12px;
+            font-size: 1.2em;
+        }
+
+        .about-section p {
+            color: #555;
+            margin-bottom: 12px;
+            font-size: 1em;
+        }
+
+        .advantages-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .advantages-list li {
+            padding: 10px 0;
+            padding-left: 30px;
+            position: relative;
+            color: #555;
+        }
+
+        .advantages-list li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #51cf66;
+            font-weight: bold;
+            font-size: 1.3em;
+        }
+
+        .team-members {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .team-member {
+            background: #f5f5f5;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            border-left: 4px solid #667eea;
+        }
+
+        .team-member-name {
+            font-weight: 600;
+            color: #333;
+            margin-top: 5px;
+        }
+
+        /* Contact Section Styles */
+        .contact-section {
+            text-align: center;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .contact-item {
+            background: #f5f5f5;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+        }
+
+        .contact-item h3 {
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+
+        .contact-item p {
+            color: #555;
+            font-size: 1.1em;
+            margin: 0;
+        }
+
+        .contact-item a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        .contact-item a:hover {
+            color: #764ba2;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .social-link {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            background: #667eea;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.8em;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+        }
+
+        .social-link:hover {
+            background: #764ba2;
+            transform: scale(1.1);
+        }
+
+        .social-link.instagram {
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+        }
+
+        .social-link.linkedin {
+            background: #0077b5;
+        }
+
+        .probability-bar {
+            margin-bottom: 15px;
+        }
+
+        .probability-bar-label {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+            font-size: 0.9em;
+            font-weight: 500;
+        }
+
+        .bar {
+            height: 8px;
+            background: #e0e0e0;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .bar-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            border-radius: 4px;
+            transition: width 0.3s;
+        }
+
+        .error-message {
+            background: #fff0f0;
+            border: 1px solid #ff6b6b;
+            color: #c92a2a;
+            padding: 12px;
+            border-radius: 8px;
+            margin-top: 20px;
+            display: none;
+        }
+
+        .error-message.show {
+            display: block;
+        }
+
+        .report-text {
+            background: white;
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 8px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+            line-height: 1.6;
+            white-space: pre-wrap;
+            overflow-x: auto;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+
+        .file-name {
+            color: #667eea;
+            font-weight: 600;
+            margin-top: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .main-card {
+                padding: 20px;
+            }
+
+            .header h1 {
+                font-size: 1.8em;
+            }
+
+            .button-group {
+                flex-direction: column;
+            }
+
+            .tabs {
+                flex-direction: column;
+            }
+
+            .tab-button {
+                border-bottom: none;
+                border-left: 3px solid transparent;
+                padding-left: 10px;
+            }
+
+            .tab-button.active {
+                border-bottom: none;
+                border-left-color: #667eea;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>💊 PolypharmGuard</h1>
+            <p>AI-Powered Drug Interaction Detection System</p>
+        </div>
+
+        <div class="main-card">
+            <div class="tabs">
+                <button class="tab-button active" onclick="switchTab('image')">
+                    📷 Prescription Image
+                </button>
+                <button class="tab-button" onclick="switchTab('text')">
+                    📝 Prescription Text
+                </button>
+                <button class="tab-button" onclick="switchTab('about')">
+                    ℹ️ About
+                </button>
+                <button class="tab-button" onclick="switchTab('contact')">
+                    📞 Contact
+                </button>
+            </div>
+
+            <!-- Image Tab -->
+            <div id="image" class="tab-content active">
+                <div class="form-group">
+                    <label>Upload Prescription Image</label>
+                    <div class="file-input-wrapper">
+                        <input type="file" id="imageInput" accept="image/*">
+                        <label for="imageInput" class="file-input-label" id="fileDragArea">
+                            <span>📁 Click to upload or drag an image here</span>
+                        </label>
+                        <div class="file-name" id="fileName"></div>
+                    </div>
+                </div>
+
+                <div class="button-group">
+                    <button class="btn-primary" id="analyzeImageBtn" onclick="analyzeImage()">
+                        Analyze Image
+                    </button>
+                    <button class="btn-secondary" onclick="clearImage()">Clear</button>
+                </div>
+            </div>
+
+            <!-- Text Tab -->
+            <div id="text" class="tab-content">
+                <div class="form-group">
+                    <label>Paste Prescription Text</label>
+                    <textarea id="prescriptionText" placeholder="Paste your prescription text here...
+Example:
+Rx:
+1. Ibuprofen 400 mg - twice daily
+2. Warfarin 5 mg - once daily
+3. Aspirin 75 mg - once daily"></textarea>
+                </div>
+
+                <div class="button-group">
+                    <button class="btn-primary" onclick="analyzeText()">
+                        Analyze Text
+                    </button>
+                    <button class="btn-secondary" onclick="clearText()">Clear</button>
+                </div>
+            </div>
+
+            <!-- About Tab -->
+            <div id="about" class="tab-content">
+                <div class="about-section">
+                    <h2>About PolypharmGuard</h2>
+                    <p>
+                        PolypharmGuard is an innovative AI-powered system designed to detect and analyze potentially
+                        harmful drug interactions in medical prescriptions.
+                        By leveraging advanced machine learning, optical character recognition (OCR), and natural
+                        language processing (NLP), PolypharmGuard provides
+                        healthcare professionals and patients with critical insights into polypharmacy risks.
+                    </p>
+
+                    <h3>🎯 What is Polypharmacy?</h3>
+                    <p>
+                        Polypharmacy refers to the simultaneous use of multiple medications by a patient. While
+                        medications are essential for treating various conditions,
+                        the combination of multiple drugs can lead to dangerous drug-drug interactions (DDI) that may
+                        cause adverse effects, reduce medication efficacy,
+                        or even pose life-threatening risks.
+                    </p>
+
+                    <h3>✨ Key Advantages</h3>
+                    <ul class="advantages-list">
+                        <li><strong>AI-Powered Detection:</strong> Uses advanced XGBoost machine learning model with 90%
+                            accuracy to identify drug interactions</li>
+                        <li><strong>OCR Technology:</strong> Extracts medicines directly from prescription images using
+                            Tesseract OCR engine</li>
+                        <li><strong>Natural Language Processing:</strong> Intelligently parses prescription text to
+                            identify medicines, dosages, and frequencies</li>
+                        <li><strong>Real-time Analysis:</strong> Provides instant risk assessment with confidence scores
+                            and probability distributions</li>
+                        <li><strong>Comprehensive Reporting:</strong> Generates detailed reports with dosage information
+                            and interaction analysis</li>
+                        <li><strong>Easy to Use:</strong> Intuitive web interface supporting both image uploads and text
+                            input</li>
+                        <li><strong>Multiple Input Methods:</strong> Accepts prescription images, text, or direct input
+                            for maximum flexibility</li>
+                        <li><strong>Risk Classification:</strong> Categorizes interactions as HIGH, MODERATE, or LOW
+                            risk with detailed recommendations</li>
+                        <li><strong>Healthcare Professional Grade:</strong> Meets professional standards for drug
+                            interaction checking</li>
+                        <li><strong>Privacy Focused:</strong> All analysis is done locally without cloud data
+                            transmission</li>
+                        <li><strong>24/7 Availability:</strong> Accessible anytime, anywhere through the web interface
+                        </li>
+                        <li><strong>Continuous Learning:</strong> Model can be retrained with updated pharmaceutical
+                            data for improved accuracy</li>
+                    </ul>
+
+                    <h3>👥 Development Team</h3>
+                    <p>PolypharmGuard was developed by a dedicated team of healthcare and technology professionals:</p>
+                    <div class="team-members">
+                        <div class="team-member">
+                            <span class="team-member-name">Akhil Raj Soni</span>
+                        </div>
+                        <div class="team-member">
+                            <span class="team-member-name">Aman</span>
+                        </div>
+                        <div class="team-member">
+                            <span class="team-member-name">Mohd Saad</span>
+                        </div>
+                        <div class="team-member">
+                            <span class="team-member-name">Mohd Mohsin</span>
+                        </div>
+                        <div class="team-member">
+                            <span class="team-member-name">Ahad Lari</span>
+                        </div>
+                    </div>
+
+                    <h3>🔬 Technology Stack</h3>
+                    <ul class="advantages-list">
+                        <li><strong>Machine Learning:</strong> XGBoost Classifier trained on 1000 prescriptions</li>
+                        <li><strong>OCR Engine:</strong> Tesseract v5.4.0 for prescription image processing</li>
+                        <li><strong>NLP Libraries:</strong> spaCy and NLTK for advanced text processing</li>
+                        <li><strong>Web Framework:</strong> Flask for REST API and web interface</li>
+                        <li><strong>Data Processing:</strong> Pandas, NumPy for robust data handling</li>
+                        <li><strong>Image Processing:</strong> OpenCV and Pillow for prescription image enhancement</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Contact Tab -->
+            <div id="contact" class="tab-content">
+                <div class="contact-section">
+                    <h2 style="color: #667eea; margin-bottom: 30px;">Get In Touch</h2>
+                    <p style="color: #555; font-size: 1.1em;">
+                        Have questions about PolypharmGuard? Need support or want to collaborate? We'd love to hear from
+                        you!
+                    </p>
+
+                    <div class="contact-info">
+                        <!-- Phone -->
+                        <div class="contact-item">
+                            <h3>📱 Phone</h3>
+                            <p>
+                                <a href="tel:+919451227855">+91 9451227855</a>
+                            </p>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="contact-item">
+                            <h3>📧 Email</h3>
+                            <p>
+                                <a href="mailto:akhilsoni953@gmail.com">akhilsoni953@gmail.com</a>
+                            </p>
+                        </div>
+
+                        <!-- Social Media -->
+                        <div class="contact-item">
+                            <h3>🌐 Follow Us</h3>
+                            <div class="social-links">
+                                <a href="#" class="social-link instagram" title="Instagram" target="_blank">
+                                    📷
+                                </a>
+                                <a href="#" class="social-link linkedin" title="LinkedIn" target="_blank">
+                                    💼
+                                </a>
+                            </div>
+                            <p style="margin-top: 15px; font-size: 0.9em; color: #999;">
+                                Links will be updated soon
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="loading" id="loading">
+                <div class="spinner"></div>
+                <p>Analyzing prescription...</p>
+            </div>
+
+            <!-- Error Message -->
+            <div class="error-message" id="errorMessage"></div>
+
+            <!-- Results -->
+            <div id="resultsContainer"></div>
+        </div>
+    </div>
+
+    <script>
+        const imageInput = document.getElementById('imageInput');
+        const fileDragArea = document.getElementById('fileDragArea');
+
+        // Drag and drop
+        fileDragArea.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            fileDragArea.classList.add('dragover');
+        });
+
+        fileDragArea.addEventListener('dragleave', () => {
+            fileDragArea.classList.remove('dragover');
+        });
+
+        fileDragArea.addEventListener('drop', (e) => {
+            e.preventDefault();
+            fileDragArea.classList.remove('dragover');
+            const files = e.dataTransfer.files;
+            if (files.length > 0) {
+                imageInput.files = files;
+                updateFileName();
+            }
+        });
+
+        imageInput.addEventListener('change', updateFileName);
+
+        function updateFileName() {
+            const fileName = imageInput.files[0]?.name || '';
+            document.getElementById('fileName').textContent = fileName ? `Selected: ${fileName}` : '';
+        }
+
+        function switchTab(tabName) {
+            // Hide all tabs
+            document.querySelectorAll('.tab-content').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            document.querySelectorAll('.tab-button').forEach(btn => {
+                btn.classList.remove('active');
+            });
+
+            // Show selected tab
+            document.getElementById(tabName).classList.add('active');
+            event.target.classList.add('active');
+
+            // Clear results
+            clearResults();
+        }
+
+        function showLoading() {
+            document.getElementById('loading').style.display = 'block';
+            clearResults();
+        }
+
+        function hideLoading() {
+            document.getElementById('loading').style.display = 'none';
+        }
+
+        function showError(message) {
+            const errorDiv = document.getElementById('errorMessage');
+            errorDiv.textContent = message;
+            errorDiv.classList.add('show');
+        }
+
+        function clearError() {
+            document.getElementById('errorMessage').classList.remove('show');
+        }
+
+        function clearResults() {
+            document.getElementById('resultsContainer').innerHTML = '';
+            clearError();
+        }
+
+        async function analyzeImage() {
+            const file = imageInput.files[0];
+            if (!file) {
+                showError('Please select an image file');
+                return;
+            }
+
+            showLoading();
+            const formData = new FormData();
+            formData.append('file', file);
+
+            try {
+                const response = await fetch('/api/analyze-image', {
+                    method: 'POST',
+                    body: formData
+                });
+
+                const data = await response.json();
+
+                if (response.ok && data.success) {
+                    displayResults(data);
+                } else {
+                    showError(data.error || 'Failed to analyze image');
+                }
+            } catch (error) {
+                showError('Error analyzing image: ' + error.message);
+            } finally {
+                hideLoading();
+            }
+        }
+
+        async function analyzeText() {
+            const text = document.getElementById('prescriptionText').value.trim();
+            if (!text) {
+                showError('Please enter prescription text');
+                return;
+            }
+
+            showLoading();
+
+            try {
+                const response = await fetch('/api/analyze-text', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ text: text })
+                });
+
+                const data = await response.json();
+
+                if (response.ok && data.success) {
+                    displayResults(data);
+                } else {
+                    showError(data.error || 'Failed to analyze text');
+                }
+            } catch (error) {
+                showError('Error analyzing text: ' + error.message);
+            } finally {
+                hideLoading();
+            }
+        }
+
+        function displayResults(data) {
+            clearError();
+            const container = document.getElementById('resultsContainer');
+
+            const riskClass = `${data.risk_level.toLowerCase()}-risk`;
+
+            let html = `
+                <div class="result-card success ${riskClass}">
+                    <div class="result-section">
+                        <h3>🔍 Analysis Results</h3>
+                        <span class="risk-badge ${data.risk_level}">${data.risk_level}</span>
+                    </div>
+
+                    <div class="result-section">
+                        <h3>💊 Detected Medicines</h3>
+                        <div class="medicines-list">
+            `;
+
+            data.medicines.forEach(medicine => {
+                html += `<div class="medicine-tag">${medicine}</div>`;
+            });
+
+            html += `
+                        </div>
+                    </div>
+
+                    <div class="result-section">
+                        <h3>📊 Interaction Metrics</h3>
+                        <p><strong>Number of Medicines:</strong> ${data.medicines.length}</p>
+                        <p><strong>Potential Drug Pairs:</strong> ${(data.medicines.length * (data.medicines.length - 1) / 2) || 0}</p>
+                        <p><strong>Confidence Score:</strong> ${data.confidence}%</p>
+                    </div>
+
+                    <div class="result-section">
+                        <h3>📈 Risk Probability Distribution</h3>
+            `;
+
+            const riskOrder = ['HIGH', 'MODERATE', 'LOW'];
+            riskOrder.forEach(risk => {
+                const prob = data.probabilities[risk] || 0;
+                const color = risk === 'HIGH' ? '#ff6b6b' : risk === 'MODERATE' ? '#ffa500' : '#51cf66';
+                html += `
+                    <div class="probability-bar">
+                        <div class="probability-bar-label">
+                            <span>${risk}:</span>
+                            <span>${prob.toFixed(2)}%</span>
+                        </div>
+                        <div class="bar">
+                            <div class="bar-fill" style="width: ${prob}%; background-color: ${color};"></div>
+                        </div>
+                    </div>
+                `;
+            });
+
+            html += `
+                    </div>
+            `;
+
+            if (data.dosages && data.dosages.length > 0) {
+                html += `
+                    <div class="result-section">
+                        <h3>💉 Dosage Information</h3>
+                        <ul>
+                `;
+                data.dosages.forEach(dosage => {
+                    html += `<li>${dosage.amount} ${dosage.unit}</li>`;
+                });
+                html += `
+                        </ul>
+                    </div>
+                `;
+            }
+
+            if (data.frequencies && data.frequencies.length > 0) {
+                html += `
+                    <div class="result-section">
+                        <h3>⏰ Medication Frequency</h3>
+                        <ul>
+                `;
+                data.frequencies.forEach(freq => {
+                    html += `<li>${freq}</li>`;
+                });
+                html += `
+                        </ul>
+                    </div>
+                `;
+            }
+
+            html += `
+                    <div class="result-section">
+                        <h3>📋 Detailed Report</h3>
+                        <div class="report-text">${data.report}</div>
+                    </div>
+                </div>
+            `;
+
+            container.innerHTML = html;
+        }
+
+        function clearImage() {
+            imageInput.value = '';
+            document.getElementById('fileName').textContent = '';
+            clearResults();
+        }
+
+        function clearText() {
+            document.getElementById('prescriptionText').value = '';
+            clearResults();
+        }
+    </script>
+</body>
+
+</html>
